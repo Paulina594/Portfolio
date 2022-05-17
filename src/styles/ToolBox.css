@@ -1,0 +1,138 @@
+.settings {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: var(--color-additonal);
+    font-size: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.settings:hover {
+    color: var(--color-theme);
+}
+
+.settings:focus {
+    color: var(--color-theme);
+}
+
+.setting-box {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    border-radius: 30px 0 30px 5px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--color-additonal);
+    box-shadow: 2px 1px 3px black;
+    visibility: hidden;
+}
+
+.visible {
+     visibility: visible;
+ }
+
+.switch {
+    position: absolute;
+    transform: translate(-50%);
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.mode {
+    top: 15%;
+    left: 50%;
+}
+
+.language {
+    top: 55%;
+    left: 50%;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-main);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--color-additonal);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--color-main);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 5px var(--color-main);
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.setting-icons {
+    display: inline-block;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.setting-icons.moon {
+    left: 5px;
+    top: 5px;
+    color: var(--color-main)
+}
+
+.setting-icons.sun {
+    right: 5px;
+    top: 5px;
+    color: var(--color-main)
+}
+
+.setting-icons.eng {
+    left: 4px;
+    top: 8px;
+    color: var(--color-main);
+    font-size: 14px;
+    font-family: ComfortaaBold;
+}
+
+.setting-icons.pol {
+    right: 6px;
+    top: 8px;
+    color: var(--color-main);
+    font-size: 14px;
+    font-family: ComfortaaBold;
+}
+
