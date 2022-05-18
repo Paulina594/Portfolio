@@ -6,78 +6,78 @@
 .blue {
     bottom: 20%;
     right: 10%;
-    animation: blue-shadow 80s infinite linear;
+    animation: blue-shadow 50s infinite linear;
 }
 
 @keyframes blue-shadow {
     0% {
         bottom: 20%;
         right: 10%;
-        transform: scale(100%);
+        transform: scale(170%);
     }
     20% {
         bottom: 30%;
         right: 20%;
-        transform: scale(150%);
+        transform: scale(140%);
     }
     40% {
         bottom: 40%;
         right: 5%;
-        transform: scale(200%);
+        transform: scale(80%);
     }
     60% {
         bottom: 50%;
         right: 2%;
-        transform: scale(200%);
+        transform: scale(80%);
     }
     80% {
         bottom: 30%;
         right: 5%;
-        transform: scale(150%);
+        transform: scale(140%);
     }
     100% {
         bottom: 20%;
         right: 10%;
-        transform: scale(100%);
+        transform: scale(170%);
     }
 }
 
 .coral {
     bottom: 5%;
     right: 30%;
-    animation: coral-shadow 80s infinite linear;
+    animation: coral-shadow 40s infinite linear;
 }
 
 @keyframes coral-shadow {
     0% {
         bottom: 5%;
         right: 30%;
-        transform: scale(100%);
+        transform: scale(170%);
     }
     20% {
         bottom: 2%;
         right: 10%;
-        transform: scale(150%);
+        transform: scale(140%);
     }
     40% {
         bottom: 1%;
         right: 1%;
-        transform: scale(200%);
+        transform: scale(80%);
     }
     60% {
         bottom: 24%;
         right: 15%;
-        transform: scale(200%);
+        transform: scale(80%);
     }
     80% {
         bottom: 14%;
         right: 25%;
-        transform: scale(150%);
+        transform: scale(140%);
     }
     100% {
         bottom: 5%;
         right: 30%;
-        transform: scale(100%);
+        transform: scale(170%);
     }
 }
 
@@ -86,14 +86,22 @@
 
 }
 
+.hero-wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 250px);
+    align-items: center;
+}
+
 .hero {
+    color: var(--color-additonal);
     font-size: 2em;
     letter-spacing: 1.5px;
     line-height: 80px;
 }
 
 .imp {
-    font-family: ComfortaaBold;
+    font-family: var(--font-family);
     /*color: var(--gradient-text);*/
     font-size: 2em;
 }
@@ -147,9 +155,9 @@
         width: 400px;
     }
 
-    .ghost-shadow {
-        transform: scale(10%);
-    }
+    /*.ghost-shadow {*/
+    /*    transform: scale(10%);*/
+    /*}*/
 }
 
 

@@ -37,10 +37,10 @@ export const Header = () => {
       <div className="navbar-container">
         <div className="logo">
           {/*<img src={logo} alt="logo" />*/}
-          <a href="/">
-            <span className="gradient-text">p</span>aulina
-            <span className="gradient-text">d</span>rożdż
-          </a>
+          <NavLink to="/">
+            <span className="initial first">p</span>aulina
+            <span className="initial last">d</span>rożdż
+          </NavLink>
         </div>
         <div className="menu">{<Menu />}</div>
       </div>

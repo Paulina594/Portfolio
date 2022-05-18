@@ -47,8 +47,8 @@
 }
 
 .initial {
-    font-family: ComfortaaBold;
+    font-family: var(--font-family);
     font-size: 65px;
-    color: var(--color-theme);
+    color: var(--color-peach);
     transition: 0.5s;
 }

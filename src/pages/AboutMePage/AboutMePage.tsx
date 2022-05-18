@@ -7,7 +7,7 @@ export const AboutMePage = () => {
     <>
       <h1 className="gradient-text">.Me</h1>
       <div className="content-wrapper about-me">
-        <div className="description">
+        <div className="page-content about-page">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
           autem debitis distinctio enim eos ex explicabo, ipsum minima
           necessitatibus nobis praesentium quisquam reprehenderit sequi, sint
