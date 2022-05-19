@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --font-family: 'Comfortaa', sans-serif;
+
+    --gradient-text: linear-gradient(136deg, rgba(255, 141, 107, 1) 20%, rgba(90, 255, 207, 1) 100%);
+    --gradient-bar: linear-gradient(136deg, rgba(255, 141, 107, 1) 20%, rgba(90, 255, 207, 1) 100%);
+    --gradient-reverse: linear-gradient(136deg, rgba(90, 255, 207, 1) 0%, rgba(255, 141, 107, 1) 80%);
+
+
+    --color-additonal: #93a2bc;
+    --color-mint: rgb(90, 255, 207);
+    --color-peach: rgb(255, 141, 107);
+}
