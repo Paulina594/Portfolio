@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Technologies = () => {
+export const TechnologiesPage = () => {
   return (
     <>
       <h1 className="gradient-text">Technologies</h1>

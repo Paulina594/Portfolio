@@ -45,6 +45,7 @@ a {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    //padding-top: 108px;
     padding-bottom: 142px;
 }
 
@@ -103,43 +104,16 @@ a {
 .container {
     width: 100%;
     position: relative;
-}
-
-@media screen and (min-width: 1400px) {
-    .container {
+    @media screen and (min-width: 1400px) {
         max-width: 1320px;
         margin: 0 auto;
     }
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .container {
+    @media screen and (max-width: 1400px) {
         max-width: 100%;
+        padding: 0 4rem;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .container {
-        max-width: 100%;
-        padding: 0 2rem;
-    }
-}
 
-@media screen and (min-width: 768px) and (max-width: 992px)  {
-    .container {
-        max-width: 100%;
-    }
-}
 
-@media screen and (min-width: 576px) and (max-width: 768px){
-    .container {
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .container {
-        max-width: 100%;
-    }
-}
 
