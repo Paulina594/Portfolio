@@ -8,10 +8,10 @@ import "./HomePage.scss";
 export const HomePage = () => {
   return (
     <>
-      <div className="ghost-shadow blue">
+      <div className="ghost-shadow mint">
         <img src={mint} alt="mint shadow" />
       </div>
-      <div className="ghost-shadow coral">
+      <div className="ghost-shadow peach">
         <img src={peach} alt="peach shadow" />
       </div>
       <div className="container">
