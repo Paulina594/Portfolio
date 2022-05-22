@@ -4,11 +4,11 @@
   width: 100%;
   padding: 2rem 6rem;
   @media screen and (max-width: 768px) {
-      padding: 1rem 1rem;
-    }
+    padding: 1rem 1rem;
+  }
   @media screen and (max-width: 576px) {
-      padding: 5px 5px;
-    }
+    padding: 5px 5px;
+  }
 
   .navbar-container {
     flex: 1;
@@ -28,22 +28,37 @@
         margin-right: 10px;
       }
 
-      a {
-        span {
-          &.initial {
-            font-size: 2.5rem;
-            font-weight: 800;
-          }
-          @media screen and (max-width: 576px) {
-            font-size: 2rem;
-        }
+      &.shine {
+        background: var(--color-additonal) -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+        background-image: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+        -webkit-background-size: 200px;
+        color: rgba(147, 162, 188, 0);
+        background-clip: text;
+        animation-name: shine;
+        animation-duration: 15s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
 
-          &.first {
-            color: var(--color-peach);
-          }
+        a {
+          span {
+            &.initial {
+              font-size: 2.5rem;
+              font-weight: 800;
+            }
 
-          &.last {
-            color: var(--color-mint);
+            @media screen and (max-width: 576px) {
+              font-size: 2rem;
+            }
+
+            &.first {
+              color: var(--color-peach);
+            }
+
+            &.last {
+              color: var(--color-mint);
+            }
           }
         }
       }
@@ -57,6 +72,27 @@
         display: none;
       }
     }
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -500px;
+  }
+  15% {
+    background-position: 500px;
+  }
+  30% {
+    background-position: 500px;
+  }
+  45% {
+    background-position: 500px;
+  }
+  60% {
+    background-position: -500px;
+  }
+  100% {
+    background-position: -500px;
   }
 }
 
@@ -111,10 +147,10 @@
 }
 
 .navbar-menu .menu-burger {
-   color: var(--color-additonal);
-   font-size: 2rem;
-   cursor: pointer;
- }
+  color: var(--color-additonal);
+  font-size: 2rem;
+  cursor: pointer;
+}
 
 .navbar-menu {
   margin-left: 1rem;

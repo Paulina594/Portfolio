@@ -1,13 +1,27 @@
 .ghost-shadow {
   position: fixed;
   z-index: -3;
+
+  &.mint {
+    bottom: 20%;
+    right: 10%;
+    animation: mint-shadow 30s infinite both linear;
+    @media screen and (max-width: 768px) {
+      animation: mint-shadow-small 20s infinite both linear;
+    }
+  }
+
+  &.peach {
+    bottom: 5%;
+    right: 30%;
+    animation: peach-shadow 40s infinite both linear;
+    @media screen and (max-width: 768px) {
+      animation: peach-shadow-small 30s infinite both linear;
+    }
+  }
+
 }
 
-.mint {
-  bottom: 20%;
-  right: 10%;
-  animation: mint-shadow 50s infinite linear;
-}
 
 @keyframes mint-shadow {
   0% {
@@ -42,11 +56,6 @@
   }
 }
 
-.peach {
-  bottom: 5%;
-  right: 30%;
-  animation: peach-shadow 40s infinite linear;
-}
 
 @keyframes peach-shadow {
   0% {
@@ -81,6 +90,73 @@
   }
 }
 
+@keyframes mint-shadow-small {
+  0% {
+    bottom: 55%;
+    right: -9%;
+    transform: scale(170%);
+  }
+  20% {
+    bottom: 50%;
+    right: 20%;
+    transform: scale(140%);
+  }
+  40% {
+    bottom: 55%;
+    right: 5%;
+    transform: scale(80%);
+  }
+  60% {
+    bottom: 60%;
+    right: -10%;
+    transform: scale(80%);
+  }
+  80% {
+    bottom: 45%;
+    right: -20%;
+    transform: scale(140%);
+  }
+  100% {
+    bottom: 55%;
+    right: -9%;
+    transform: scale(170%);
+  }
+}
+
+
+@keyframes peach-shadow-small {
+  0% {
+    bottom: -15%;
+    right: 3%;
+    transform: scale(170%);
+  }
+  20% {
+    bottom: 2%;
+    right: 10%;
+    transform: scale(140%);
+  }
+  40% {
+    bottom: -1%;
+    right: 1%;
+    transform: scale(80%);
+  }
+  60% {
+    bottom: 1%;
+    right: -35%;
+    transform: scale(80%);
+  }
+  80% {
+    bottom: -5%;
+    right: -45%;
+    transform: scale(140%);
+  }
+  100% {
+    bottom: -15%;
+    right: 3%;
+    transform: scale(170%);
+  }
+}
+
 .hero-wrapper {
   display: flex;
   width: 100%;
@@ -98,7 +174,6 @@
     }
 
     @media screen and (max-width: 1400px) {
-      //padding-top: 10%;
       font-size: 1rem;
       line-height: 45px;
     }
@@ -112,7 +187,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        line-height: 35px;
+      line-height: 35px;
     }
 
     @media screen and (max-width: 576px) {

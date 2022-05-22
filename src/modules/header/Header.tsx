@@ -21,7 +21,7 @@ export const Header = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="logo">
+        <div className="logo shine">
           <Link to="/">
             <span className="initial first">p</span>aulina
             <span className="initial last">d</span>rożdż
