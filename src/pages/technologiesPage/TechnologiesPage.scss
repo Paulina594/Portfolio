@@ -1,0 +1,42 @@
+.tech-description {
+  padding-bottom: 2rem;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-bottom: 3rem;
+  @media screen and (max-width: 567px) {
+    font-size: 11px;
+  }
+
+  .tech {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+    margin: 0 auto;
+    @media screen and (max-width: 567px) {
+      padding: 20px;
+    }
+
+    .tech-icon {
+      height: 100px;
+      padding-bottom: 20px;
+      transition: .5s;
+      @media screen and (max-width: 567px) {
+        height: 70px;
+      }
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+
