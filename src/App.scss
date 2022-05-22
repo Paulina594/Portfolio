@@ -21,13 +21,13 @@ body {
 }
 
 .container {
-  border: 1px solid cadetblue;
   width: 100%;
   position: relative;
   margin: 0 auto;
   color: var(--color-additonal);
   @media screen and (min-width: 1600px) {
     max-width: 1520px;
+    margin-bottom: 6rem;
   }
   @media screen and (max-width: 1600px) {
     max-width: 1320px;
@@ -44,7 +44,6 @@ body {
 }
 
 .title-wrapper {
-  border: #227642 1px solid;
   margin: 0 auto;
   @media screen and (min-width: 1600px) {
     padding-top: 6rem;
@@ -71,7 +70,7 @@ body {
   }
   @media screen and (max-width: 576px) {
     padding: 30px 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   h1 {
@@ -79,9 +78,11 @@ body {
     font-weight: 800;
     width: max-content;
     padding: 0;
+    @media screen and (max-width: 576px) {
+      font-size: 2rem;
+    }
   }
 }
-
 
 a {
   color: unset;
