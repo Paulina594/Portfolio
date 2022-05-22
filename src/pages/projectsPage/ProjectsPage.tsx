@@ -1,5 +1,7 @@
 import React from "react";
-import { ProjectCard } from "../../components/projectCard/ProjectCard";
+// import { ProjectCard } from "../../components/projectCard/ProjectCard";
+
+import img3 from "../../assets/images/construction.png";
 
 import "./ProjectsPage.scss";
 
@@ -10,12 +12,7 @@ export const ProjectsPage = () => {
         <h1 className="gradient-text">Projects</h1>
       </div>
       <div className="container">
-        <div className="row projects-description"></div>
-        <div className="row projects">
-          {<ProjectCard name="Metronom" />}
-          {<ProjectCard name="Dzienniczek treningowy" />}
-          {<ProjectCard name="ToDo Lista" />}
-        </div>
+        <img className="construction" src={img3} alt="" />
       </div>
     </>
   );
