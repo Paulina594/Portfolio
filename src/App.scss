@@ -1,0 +1,163 @@
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 31% 0%, rgb(11, 62, 132) 0%, rgba(1, 13, 55, 1) 100%);
+
+}
+
+.container {
+  border: 1px solid cadetblue;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  color: var(--color-additonal);
+  @media screen and (min-width: 1600px) {
+    max-width: 1520px;
+  }
+  @media screen and (max-width: 1600px) {
+    max-width: 1320px;
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: 100%;
+    padding: 0 4rem;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+}
+
+.title-wrapper {
+  border: #227642 1px solid;
+  margin: 0 auto;
+  @media screen and (min-width: 1600px) {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+    max-width: 1520px;
+  }
+  @media screen and (max-width: 1600px) {
+    max-width: 1320px;
+    padding: 6rem 0;
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: 100%;
+    padding: 4rem 4rem;
+  }
+  @media screen and (max-width: 992px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 30px 15px;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    width: max-content;
+    padding: 0;
+  }
+}
+
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.page-content {
+  color: var(--color-additonal);
+  padding-bottom: 100px;
+  margin-left: 15%;
+  line-height: 30px;
+}
+
+.app-wrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 142px;
+}
+
+.gradient-bg {
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(circle at 31% 0%, rgba(0, 47, 129, 1) 9%, rgba(0, 32, 65, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(circle at 31% 0%, rgba(0, 47, 129, 1) 9%, rgba(0, 32, 65, 1) 100%);
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(circle at 31% 0%, rgba(0, 47, 129, 1) 9%, rgba(0, 32, 65, 1) 100%);
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(circle at 31% 0%, rgba(0, 47, 129, 1) 9%, rgba(0, 32, 65, 1) 100%);
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(circle at 31% 0%, rgba(0, 47, 129, 1) 9%, rgba(0, 32, 65, 1) 100%);
+
+}
+
+.gradient-text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  @media screen and (max-width: 1200px) {
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 13px;
+  }
+
+  .col-left {
+    flex: 1 1 50%;
+    justify-content: flex-start;
+    padding-right: 25px;
+    @media screen and (max-width: 1200px) {
+      padding-bottom: 20px;
+      justify-content: center;
+      width: 100%;
+    }
+    @media screen and (max-width: 1200px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .email-contact {
+      line-height: 30px;
+    }
+
+    .email-link {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: fit-content;
+      cursor: pointer;
+
+      .fa-at {
+        font-size: 40px;
+        padding: 10px;
+        @media screen and (max-width: 576px) {
+          font-size: 25px;
+        }
+      }
+
+      &:hover {
+        background: var(--gradient-text);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .col-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 1 50%;
+    padding-left: 25px;
+    @media screen and (max-width: 1200px) {
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: center;
+      width: 100%;
+    }
+    @media screen and (max-width: 992px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    form {
+      input {
+        width: 100%;
+      }
+
+      textarea {
+        resize: none;
+        width: 100%;
+        @media screen and (max-width: 1640px) {
+
+        }
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
+      }
+
+      input, textarea {
+        box-sizing: border-box;
+        display: block;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid var(--color-mint);
+        font-family: var(--font-family);
+        color: var(--color-additonal);
+
+        &:focus, &:focus {
+          border: 2px solid var(--color-mint);
+          outline: none;
+          box-shadow: 0 0 5px var(--color-mint);
+        }
+
+        &::placeholder {
+          color: var(--color-additonal);
+        }
+      }
+
+      button.send {
+        display: flex;
+        margin: 20px auto;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 2px solid var(--color-additonal);
+        color: var(--color-additonal);
+        font-family: var(--font-family);
+        transition: .5s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          border-color: var(--color-peach);
+          box-shadow: 0 0 15px var(--color-peach);
+          color: var(--color-peach);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+
+.social-wrapper {
+  padding-top: 100px;
+  color: var(--color-additonal);
+  @media screen and (max-width: 1200px) {
+    width: fit-content;
+  }
+  @media screen and (max-width: 576px) {
+    width: fit-content;
+    font-size: 12px;
+  }
+
+  .social-section {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    height: 100px;
+    @media screen and (max-width: 1200px) {
+      width: fit-content;
+    }
+    @media screen and (max-width: 576px) {
+      width: fit-content;
+      font-size: 12px;
+    }
+
+
+    .social-contact {
+      text-align: center;
+    }
+
+    .arrows {
+      position: relative;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 1.5rem;
+      animation: arrow 3s infinite linear;
+    }
+  }
+}
+
+
+@keyframes arrow {
+  0% {
+    bottom: -15px;
+  }
+  10% {
+    bottom: -20px;
+  }
+  20% {
+    bottom: -15px;
+  }
+  30% {
+    bottom: -15px
+  }
+  40% {
+    bottom: -20px;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: -15px;
+  }
+}
+
+
+
