@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+  border: 1px solid cadetblue;
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -43,6 +44,7 @@ body {
 }
 
 .title-wrapper {
+  border: #227642 1px solid;
   margin: 0 auto;
   @media screen and (min-width: 1600px) {
     padding-top: 6rem;
