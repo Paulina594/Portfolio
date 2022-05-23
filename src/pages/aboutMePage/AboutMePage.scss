@@ -1,8 +1,14 @@
+ .col-left p {
+    margin-bottom: 20px;
+  }
+
+
 .image-wrapper {
   display: flex;
 
-  img {
+  img {max-height: 800px;
     max-width: 100%;
+
     position: relative;
     bottom: 70px;
     @media screen and (min-width: 1200px) {
