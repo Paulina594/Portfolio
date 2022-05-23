@@ -1,13 +1,16 @@
-.projects {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.fa-person-digging {
+    line-height: 30px;
 }
 
 img.construction {
-    display: flex;
-    margin: 0 auto;
-    opacity: .6;
+    width: 100%;
+    opacity: .7;
+    @media screen and (max-width: 1200px) {
+        padding-top: 50px;
+        width: 70%;
+    }
+    @media screen and (max-width: 992px) {
+        padding-top: 70px;
+        width: 100%;
+    }
 }
