@@ -19,8 +19,6 @@
       padding-bottom: 20px;
       justify-content: center;
       width: 100%;
-    }
-    @media screen and (max-width: 1200px) {
       padding-left: 0;
       padding-right: 0;
     }
@@ -64,13 +62,12 @@
       padding-right: 0;
       justify-content: center;
       width: 100%;
-    }
-    @media screen and (max-width: 992px) {
-      padding-left: 0;
-      padding-right: 0;
+      flex-basis: 100%;
     }
 
+
     form {
+      width: 100%;
       input {
         width: 100%;
       }

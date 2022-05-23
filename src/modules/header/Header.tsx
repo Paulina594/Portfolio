@@ -8,6 +8,7 @@ import "./Header.scss";
 
 export const Menu = () => (
   <>
+    <NavLink to="/">Home</NavLink>
     <NavLink to="/about">About Me</NavLink>{" "}
     <NavLink to="/technologies">Technologies</NavLink>{" "}
     <NavLink to="/projects">Projects</NavLink>{" "}

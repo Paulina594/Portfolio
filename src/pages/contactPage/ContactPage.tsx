@@ -40,7 +40,7 @@ export const ContactPage = () => {
                 <input type="email" placeholder="E-mail" />
               </label>
               <label htmlFor="message">
-                <textarea placeholder="Message" rows={20} cols={80} />
+                <textarea placeholder="Message" rows={20} />
               </label>
               <button className="send" type="submit">
                 Send
