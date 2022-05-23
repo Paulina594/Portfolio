@@ -133,11 +133,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### TechnologiesPage
 
-<img src="https://i.postimg.cc/yxMs2TMW/technologies.png" alt="TechnologiesPage" />
+<img src="https://i.postimg.cc/yxMs2TMW/technologies.png" alt="technologiesPage" />
 
 ### ProjectsPage
 
-<img src="https://i.postimg.cc/gkb0Szms/projects.png" alt="ProjectsPage" />
+<img src="https://i.postimg.cc/jSrFsV3q/projects.png" alt="projectsPage" />
 
 ### ContactPage
 
