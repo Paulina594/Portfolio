@@ -18,7 +18,6 @@
     flex-basis: 25%;
     flex-direction: column;
     align-items: center;
-
     padding: 40px;
     margin: 0 auto;
     @media screen and (max-width: 567px) {
@@ -32,10 +31,12 @@
       @media screen and (max-width: 567px) {
         height: 70px;
       }
-
       &:hover {
         transform: scale(1.25);
       }
+    }
+    p {
+      text-align: center;
     }
   }
 }

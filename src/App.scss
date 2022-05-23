@@ -47,27 +47,20 @@ body {
 .title-wrapper {
   margin: 0 auto;
   @media screen and (min-width: 1600px) {
-    padding-top: 6rem;
-    padding-bottom: 7rem;
+    padding: 4rem 0 3rem 0;
     max-width: 1520px;
   }
   @media screen and (max-width: 1600px) {
-    max-width: 1320px;
-    padding: 6rem 0;
+    width: 1320px;
+    //margin-left: 4rem;
+    padding: 4rem 0 3rem 0;
   }
   @media screen and (max-width: 1400px) {
-    max-width: 100%;
-    padding: 4rem 4rem;
-  }
-  @media screen and (max-width: 992px) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    padding-left: 4rem;
+    width: 100%;
+    padding: 4rem 0 3rem 4rem;
   }
   @media screen and (max-width: 768px) {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 4rem;
+    padding: 2rem 0 2rem 4rem;
   }
   @media screen and (max-width: 576px) {
     padding: 30px 15px;
@@ -102,7 +95,6 @@ a {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 142px;
 }
 
 .gradient-bg {

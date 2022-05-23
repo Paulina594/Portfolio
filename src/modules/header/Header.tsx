@@ -21,15 +21,13 @@ export const Header = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-container">
-        <div className="logo shine">
-          <Link to="/">
-            <span className="initial first">p</span>aulina
-            <span className="initial last">d</span>rożdż
-          </Link>
-        </div>
-        <div className="menu">{<Menu />}</div>
+      <div className="logo shine">
+        <Link to="/">
+          <span className="initial first">p</span>aulina
+          <span className="initial last">d</span>rożdż
+        </Link>
       </div>
+      <div className="menu">{<Menu />}</div>
       <div className="navbar-menu">
         {toggleMenu ? (
           <FontAwesomeIcon

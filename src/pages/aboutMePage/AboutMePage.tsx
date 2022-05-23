@@ -17,7 +17,7 @@ export const AboutMePage = () => {
             <p>
               My name is Paulina Drożdż and I am a freelance front-end
               developer.
-            </p>{" "}
+            </p>
             <p>
               You are welcome to my online portfolio, where I showcase some of
               my most challenging projects and how I have applied my knowledge
@@ -33,7 +33,7 @@ export const AboutMePage = () => {
             <p>
               Building websites is a mix of passion and excitement for me. I
               have a flair for creativity, and find it an oddly satisfying
-              experience when my designs come alive.{" "}
+              experience when my designs come alive.
             </p>
             <p>
               Responsive design principle is at the heart of all my projects. As
@@ -67,7 +67,7 @@ export const AboutMePage = () => {
             </p>
             <p>
               Over and above that I am into DIY. When there is something what
-              needs repairing, I am always the first to try to fix it myself.
+              needs repairing, I am always first to try to fix it myself.
             </p>
             <p>
               I am always excited by new projects and would love to work with

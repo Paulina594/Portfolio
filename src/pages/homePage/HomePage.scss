@@ -160,21 +160,20 @@
   .hero-wrapper {
     display: flex;
     width: 100%;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 352px);
     align-items: center;
+    margin-top: 50px;
 
     .hero {
       color: var(--color-additonal);
       font-size: 2em;
       letter-spacing: 1.5px;
-      line-height: 80px;
+      line-height: 55px;
       @media screen and (max-width: 1640px) {
-        padding-top: 5%;
         font-size: 1.5rem;
       }
 
       @media screen and (max-width: 1400px) {
-        font-size: 1rem;
         line-height: 45px;
       }
 
@@ -182,22 +181,21 @@
       }
 
       @media screen and (max-width: 992px) {
-        line-height: 40px;
-        width: 400px;
-      }
-
-      @media screen and (max-width: 768px) {
-        line-height: 35px;
+        width: 450px;
       }
 
       @media screen and (max-width: 576px) {
-        width: 200px;
+        line-height: 35px;
+        width: 250px;
       }
 
       span {
         &.imp {
           font-family: var(--font-family);
           font-size: 2em;
+          @media screen and (max-width: 992px) {
+            font-size: 1.8rem;
+        }
         }
       }
     }
