@@ -77,7 +77,7 @@ export const AboutMePage = () => {
           </div>
           <div className="col-right">
             <div className="image-wrapper">
-              <img src={me10} alt="Paulina Drożdż photo" />
+              <img src={me10} alt="Paulina Drożdż" />
             </div>
           </div>
         </div>

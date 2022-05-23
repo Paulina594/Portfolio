@@ -21,7 +21,7 @@ export const ProjectsPage = () => {
             <img
               className="construction"
               src={img3}
-              alt="building site flat image"
+              alt="building site flat design"
             />
           </div>
         </div>
