@@ -14,7 +14,7 @@ export const HomePage = () => {
       <div className="ghost-shadow peach">
         <img src={peach} alt="peach shadow" />
       </div>
-      <div className="container">
+      <div className="container" id="main">
         <div className="hero-wrapper">
           <p className="hero">
             Hi, my name is Paulina and I am
