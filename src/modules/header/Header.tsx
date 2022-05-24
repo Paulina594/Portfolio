@@ -1,74 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { MenuBurger } from "../../components/menuBurger/MenuBurger";
+import { Menu } from "../../components/Menu";
 
 import "./Header.scss";
-
-export const Menu = () => (
-  <>
-    <NavLink to="/">Home</NavLink>
-    <NavLink to="/about">About Me</NavLink>{" "}
-    <NavLink to="/technologies">Technologies</NavLink>{" "}
-    <NavLink to="/projects">Projects</NavLink>{" "}
-    <NavLink to="/contact">Contact</NavLink>
-  </>
-);
-
-function useComponentVisible(initialIsVisible: boolean, ref: any) {
-  const [isComponentVisible, setIsComponentVisible] =
-    useState(initialIsVisible);
-
-  console.log(ref);
-
-  const handleClickOutside = (event: MouseEvent) => {
-    if (ref.current && !ref.current.contains(event.target)) {
-      setIsComponentVisible(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
-    return () => {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  });
-
-  return { isComponentVisible, setIsComponentVisible };
-}
-
-const MenuBurger = () => {
-  const menu = useRef(null);
-
-  const { isComponentVisible, setIsComponentVisible } = useComponentVisible(
-    false,
-    menu
-  );
-
-  return (
-    <div ref={menu}>
-      {isComponentVisible ? (
-        <FontAwesomeIcon
-          className="menu-burger bars"
-          icon={faXmark}
-          onClick={() => setIsComponentVisible(false)}
-        />
-      ) : (
-        <FontAwesomeIcon
-          className="menu-burger xmark"
-          icon={faBars}
-          onClick={() => setIsComponentVisible(true)}
-        />
-      )}
-      {isComponentVisible && (
-        <div className="menu-burger-box scale-up-center">
-          <div className="menu-burger-container">{<Menu />}</div>
-        </div>
-      )}
-    </div>
-  );
-};
 
 export const Header = () => {
   return (
