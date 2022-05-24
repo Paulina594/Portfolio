@@ -51,7 +51,9 @@ export const MenuBurger = () => {
       )}
       {isComponentVisible && (
         <div className="menu-burger-box scale-up-center">
-          <div className="menu-burger-container">{<Menu />}</div>
+          <div className="menu-burger-container">
+            {<Menu click={() => setIsComponentVisible(false)} />}
+          </div>
         </div>
       )}
     </div>
