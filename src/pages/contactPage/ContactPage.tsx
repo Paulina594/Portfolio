@@ -28,7 +28,9 @@ export const ContactPage = () => {
               You can also send me an e-mail on:
             </div>
             <div className="email-link">
-              <i className="fa-solid fa-at" /> paulina.drozdz.me@gmail.com
+              <a href="mailto: paulina.drozdz.me@gmail.com">
+                <i className="fa-solid fa-at" /> paulina.drozdz.me@gmail.com
+              </a>
             </div>
           </div>
           <div className="col-right">

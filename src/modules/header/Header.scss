@@ -2,12 +2,21 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 2rem 6rem;
-  @media screen and (max-width: 768px) {
-    padding: 1rem 1rem;
+  @media screen and (min-width: 1600px) {
+    padding: 2rem 2rem;
+  }
+  @media screen and (max-width: 1600px) {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  @media screen and (max-width: 1400px) {
+    max-width: 100%;
+    margin: 0;
+    padding: 2rem 4rem;
   }
   @media screen and (max-width: 576px) {
-    padding: 5px 5px;
+    padding: 30px 15px;
   }
 
   .navbar-container {
@@ -18,59 +27,60 @@
     @media screen and (max-width: 576px) {
       width: fit-content;
     }
+  }
 
-    .logo {
-      font-size: 2rem;
-      color: var(--color-additonal);
-      margin-right: 2rem;
-      @media screen and (max-width: 576px) {
-        font-size: 1.5rem;
-        margin-right: 10px;
-      }
+  .logo {
+    font-size: 2rem;
+    color: var(--color-additonal);
+    margin-right: 2rem;
+    @media screen and (max-width: 576px) {
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
 
-      &.shine {
-        background: var(--color-additonal) -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
-        background-image: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
-        -webkit-background-size: 200px;
-        color: rgba(147, 162, 188, 0);
-        background-clip: text;
-        animation-name: shine;
-        animation-duration: 15s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+    &.shine {
+      background: var(--color-additonal) -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+      background-image: linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+      -webkit-background-size: 200px;
+      color: rgba(147, 162, 188, 0);
+      background-clip: text;
+      animation-name: shine;
+      animation-duration: 15s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
 
-        a {
-          span {
-            &.initial {
-              font-size: 2.5rem;
-              font-weight: 800;
-            }
+      a {
+        span {
+          &.initial {
+            font-size: 2.5rem;
+            font-weight: 800;
+          }
 
-            @media screen and (max-width: 576px) {
-              font-size: 2rem;
-            }
+          @media screen and (max-width: 576px) {
+            font-size: 2rem;
+          }
 
-            &.first {
-              color: var(--color-peach);
-            }
+          &.first {
+            color: var(--color-peach);
+          }
 
-            &.last {
-              color: var(--color-mint);
-            }
+          &.last {
+            color: var(--color-mint);
           }
         }
       }
     }
+  }
 
-    .menu {
-      display: flex;
-      flex-direction: row;
-      align-content: space-between;
-      @media screen and (max-width: 1200px) {
-        display: none;
-      }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1200px) {
+      display: none;
     }
   }
 }
@@ -96,98 +106,7 @@
   }
 }
 
-.menu, .menu-burger-container {
 
-  a {
-    display: block;
-    position: relative;
-    color: var(--color-additonal);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: capitalize;
-    width: fit-content;
-    margin: 0 1rem;
-    cursor: pointer;
-
-    &:after {
-      display: block;
-      content: "";
-      position: absolute;
-      top: 27px;
-      left: 50%;
-      transform: translate(-50%);
-      height: 2px;
-      width: 0;
-      border-radius: 50%;
-      box-shadow: 0 0 5px white;
-      background-image: var(--gradient-bar);
-      transition: .5s;
-    }
-
-    &:hover {
-      &:after {
-        width: 100%;
-      }
-    }
-
-    &.active {
-      background: var(--gradient-text);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-
-      &:after {
-        width: 100%;
-      }
-    }
-
-  }
-}
-
-.navbar-menu .menu-burger {
-  color: var(--color-additonal);
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.navbar-menu {
-  margin-left: 1rem;
-  display: none;
-  position: relative;
-  @media screen and (max-width: 1200px) {
-    display: block;
-  }
-
-  .menu-burger-box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-
-    text-align: end;
-    background: rgba(1, 13, 55, 0.5);
-    padding: 2rem;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin-top: 1rem;
-    min-width: 210px;
-    border-radius: 5px;
-    border: 2px solid rgba(11, 62, 132, 100);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
-    z-index: 1;
-    @media screen and (max-width: 576px) {
-      background: rgba(1, 13, 55, 0.8);
-    }
-
-    a {
-      display: block;
-      margin: 1rem 0;
-    }
-  }
-}
 
 
 
