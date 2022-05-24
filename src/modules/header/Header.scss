@@ -177,7 +177,7 @@
     flex-direction: column;
 
     text-align: end;
-    background: rgba(1, 13, 55, 0.5);
+    background: rgba(1, 13, 55, 0.9);
     padding: 2rem;
     position: absolute;
     top: 40px;
@@ -188,9 +188,6 @@
     border: 2px solid rgba(11, 62, 132, 100);
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
     z-index: 1;
-    @media screen and (max-width: 576px) {
-      background: rgba(1, 13, 55, 0.8);
-    }
 
     a {
       display: block;

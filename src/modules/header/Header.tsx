@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,9 +16,61 @@ export const Menu = () => (
   </>
 );
 
-export const Header = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+function useComponentVisible(initialIsVisible: boolean, ref: any) {
+  const [isComponentVisible, setIsComponentVisible] =
+    useState(initialIsVisible);
 
+  console.log(ref);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setIsComponentVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside, true);
+    return () => {
+      document.removeEventListener("click", handleClickOutside, true);
+    };
+  });
+
+  return { isComponentVisible, setIsComponentVisible };
+}
+
+const MenuBurger = () => {
+  const menu = useRef(null);
+
+  const { isComponentVisible, setIsComponentVisible } = useComponentVisible(
+    false,
+    menu
+  );
+
+  return (
+    <div ref={menu}>
+      {isComponentVisible ? (
+        <FontAwesomeIcon
+          className="menu-burger bars"
+          icon={faXmark}
+          onClick={() => setIsComponentVisible(false)}
+        />
+      ) : (
+        <FontAwesomeIcon
+          className="menu-burger xmark"
+          icon={faBars}
+          onClick={() => setIsComponentVisible(true)}
+        />
+      )}
+      {isComponentVisible && (
+        <div className="menu-burger-box scale-up-center">
+          <div className="menu-burger-container">{<Menu />}</div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export const Header = () => {
   return (
     <div className="navbar">
       <div className="logo shine">
@@ -28,26 +80,7 @@ export const Header = () => {
         </Link>
       </div>
       <div className="menu">{<Menu />}</div>
-      <div className="navbar-menu">
-        {toggleMenu ? (
-          <FontAwesomeIcon
-            className="menu-burger bars"
-            icon={faXmark}
-            onClick={() => setToggleMenu(false)}
-          />
-        ) : (
-          <FontAwesomeIcon
-            className="menu-burger xmark"
-            icon={faBars}
-            onClick={() => setToggleMenu(true)}
-          />
-        )}
-        {toggleMenu && (
-          <div className="menu-burger-box scale-up-center">
-            <div className="menu-burger-container">{<Menu />}</div>
-          </div>
-        )}
-      </div>
+      <div className="navbar-menu">{<MenuBurger />}</div>
     </div>
   );
 };
