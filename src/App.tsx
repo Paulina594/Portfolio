@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { Header } from "./modules/header/Header";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="app-wrapper bg-pan-right">
+        <div className="app-wrapper">
           {<Header />}
           {<PageContent />}
           {<Footer />}
