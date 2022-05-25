@@ -52,17 +52,19 @@ export const TechnologiesPage = () => {
   return (
     <>
       <div className="title-wrapper">
-        <h1 className="gradient-text">Technologies</h1>
+        <h1 className="gradient-text slide-in-left">Technologies</h1>
       </div>
       <div className="container">
-        <div className="row tech-description">
+        <div className="row tech-description slide-in-fwd-center">
           Tools I am currently working/playing with:{" "}
         </div>
-        <div className="row technologies">{toolsList}</div>
-        <div className="row tech-description">
+        <div className="row technologies slide-in-fwd-center">{toolsList}</div>
+        <div className="row tech-description slide-in-fwd-center">
           Other solutions I am familiar with:{" "}
         </div>
-        <div className="row technologies">{otherToolsList}</div>
+        <div className="row technologies slide-in-fwd-center">
+          {otherToolsList}
+        </div>
       </div>
     </>
   );

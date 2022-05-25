@@ -15,11 +15,12 @@ export const HomePage = () => {
         <img src={peach} alt="peach shadow" />
       </div>
       <div className="container" id="main">
-        <div className="hero-wrapper">
+        <div className="hero-wrapper fade-in-fwd">
           <p className="hero">
             Hi, my name is Paulina and I am
             <br />
-            <span className="imp gradient-text">front-end developer</span>.
+            <span className="imp gradient-text">front-end developer</span>
+            .
             <br />
             Please, take a look around to find out more about me and my work.
           </p>

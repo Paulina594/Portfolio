@@ -5,7 +5,7 @@ import "./Footer.scss";
 export const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <div className="footer">
+      <div className="footer slide-in-bottom">
         <div className="social-container">
           <a
             href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"

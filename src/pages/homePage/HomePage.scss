@@ -163,12 +163,18 @@
     height: calc(100vh - 352px);
     align-items: center;
     margin-top: 50px;
+    &.fade-in-fwd {
+      -webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+      animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    }
 
     .hero {
       color: var(--color-additonal);
       font-size: 2em;
       letter-spacing: 1.5px;
       line-height: 55px;
+
+
       @media screen and (max-width: 1640px) {
         font-size: 1.5rem;
       }
@@ -200,3 +206,29 @@
       }
     }
   }
+
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}

@@ -9,11 +9,11 @@ export const AboutMePage = () => {
     <>
       {" "}
       <div className="title-wrapper">
-        <h1 className="gradient-text">About me</h1>
+        <h1 className="gradient-text slide-in-left">About me</h1>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-left">
+          <div className="col-left slide-in-fwd-center">
             <p>
               My name is Paulina Drożdż and I am a freelance front-end
               developer.
@@ -75,7 +75,7 @@ export const AboutMePage = () => {
               me a shout.
             </p>
           </div>
-          <div className="col-right">
+          <div className="col-right fade-in">
             <div className="image-wrapper">
               <img src={me10} alt="Paulina Drożdż" />
             </div>
