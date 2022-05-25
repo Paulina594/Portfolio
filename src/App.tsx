@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="app-wrapper">
+        <div className="app-wrapper bg-pan-right">
           {<Header />}
           {<PageContent />}
           {<Footer />}

@@ -15,8 +15,10 @@ export const Header = () => {
           <span className="initial last">d</span>rożdż
         </Link>
       </div>
-      <div className="menu">{<Menu />}</div>
-      <div className="navbar-menu">{<MenuBurger />}</div>
+      <div className="menu slide-in-top">{<Menu />}</div>
+      <div className="navbar-menu slide-in-fwd-center-menu">
+        {<MenuBurger />}
+      </div>
     </div>
   );
 };

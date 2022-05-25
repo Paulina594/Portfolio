@@ -9,12 +9,12 @@ export const ContactPage = () => {
   return (
     <>
       <div className="title-wrapper">
-        <h1 className="gradient-text">Get in touch!</h1>
+        <h1 className="gradient-text slide-in-left">Get in touch!</h1>
       </div>
 
       <div className="container">
         <div className="row">
-          <div className="col-left">
+          <div className="col-left slide-in-fwd-center">
             Any questions or thoughts?
             <br />
             Want to ask something, get my resume or just say 'Hi!' ?<br />
@@ -33,7 +33,7 @@ export const ContactPage = () => {
               </a>
             </div>
           </div>
-          <div className="col-right">
+          <div className="col-right fade-in">
             <form>
               <label htmlFor="name">
                 <input type="text" placeholder="Name" />
@@ -51,8 +51,8 @@ export const ContactPage = () => {
           </div>
         </div>
       </div>
-      <div className="social-wrapper">
-        <div className="social-section">
+      <div className="social-wrapper ">
+        <div className="social-section bounce-in-top">
           <p className="social-contact">Or contact me via social media</p>
           <FontAwesomeIcon className="arrows" icon={faAnglesDown} />
         </div>

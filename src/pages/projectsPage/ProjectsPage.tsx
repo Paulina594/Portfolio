@@ -9,15 +9,15 @@ export const ProjectsPage = () => {
   return (
     <>
       <div className="title-wrapper">
-        <h1 className="gradient-text">Projects</h1>
+        <h1 className="gradient-text slide-in-left">Projects</h1>
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-left">
+          <div className="col-left slide-in-fwd-center">
             I'm sorry, this page is currently under development.{" "}
             <i className="fa-solid fa-person-digging" />
           </div>
-          <div className="col-right">
+          <div className="col-right fade-in">
             <img
               className="construction"
               src={img3}
