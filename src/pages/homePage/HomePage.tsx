@@ -4,8 +4,9 @@ import mint from "../../assets/images/mint-ghost.png";
 import peach from "../../assets/images/peach-ghost.png";
 
 import "./HomePage.scss";
+import { HeroAnimation } from "./HeroAnimation";
 
-export const HomePage = () => {
+export let HomePage = () => {
   return (
     <>
       <div className="ghost-shadow mint">
@@ -16,14 +17,15 @@ export const HomePage = () => {
       </div>
       <div className="container" id="main">
         <div className="hero-wrapper fade-in-fwd">
-          <p className="hero">
+          <div className="hero">
             Hi, my name is Paulina and I am
             <br />
+            {<HeroAnimation />}
             <span className="imp gradient-text">front-end developer</span>
             .
             <br />
             Please, take a look around to find out more about me and my work.
-          </p>
+          </div>
         </div>
       </div>
     </>
