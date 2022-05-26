@@ -16,7 +16,7 @@ export const PageContent = () => {
       <Route path="/technologies" element={<TechnologiesPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route element={<ErrorPage />} />
+      <Route path="/*" element={<ErrorPage />} />
     </Routes>
   );
 };
