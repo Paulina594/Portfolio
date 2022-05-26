@@ -37,6 +37,7 @@ export const HeroAnimation = () => {
       this.loopNum++;
       delta = 500;
     }
+    console.log("aaa");
 
     setTimeout(function () {
       that.tick();
