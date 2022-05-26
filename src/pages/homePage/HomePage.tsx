@@ -16,14 +16,26 @@ export const HomePage = () => {
       </div>
       <div className="container" id="main">
         <div className="hero-wrapper fade-in-fwd">
-          <p className="hero">
+          <div className="hero">
             Hi, my name is Paulina and I am
+            <br />
+            <div className="hero-animation">
+              <div className="words-carousel">
+                <ul>
+                  <li className="gradient-text imp">reliable</li>
+                  <li className="gradient-text imp">hard-working</li>
+                  <li className="gradient-text imp">consistent</li>
+                  <li className="gradient-text imp">passionate</li>
+                  <li className="gradient-text imp">creative</li>
+                </ul>
+              </div>
+            </div>
             <br />
             <span className="imp gradient-text">front-end developer</span>
             .
             <br />
             Please, take a look around to find out more about me and my work.
-          </p>
+          </div>
         </div>
       </div>
     </>

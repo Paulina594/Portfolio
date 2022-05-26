@@ -19,7 +19,6 @@
       animation: peach-shadow-small 30s infinite both linear;
     }
   }
-
 }
 
 
@@ -157,56 +156,164 @@
   }
 }
 
-  .hero-wrapper {
-    display: flex;
-    width: 100%;
-    height: calc(100vh - 352px);
-    align-items: center;
-    margin-top: 50px;
-    &.fade-in-fwd {
-      -webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
-      animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+.hero-wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 352px);
+  align-items: center;
+  margin-top: 50px;
+
+  &.fade-in-fwd {
+    -webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+  }
+
+  .hero {
+    color: var(--color-additonal);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 45px;
+
+    @media screen and (max-width: 992px) {
+      width: 450px;
     }
 
-    .hero {
-      color: var(--color-additonal);
-      font-size: 2em;
-      letter-spacing: 1.5px;
-      line-height: 55px;
+    @media screen and (max-width: 576px) {
+      width: 250px;
+    }
 
+    .hero-animation {
+      display: inline-block;
 
-      @media screen and (max-width: 1640px) {
-        font-size: 1.5rem;
-      }
+      .words-carousel {
+        height: 45px;
+        width: 550px;
+        overflow: hidden;
 
-      @media screen and (max-width: 1400px) {
-        line-height: 45px;
-      }
+        ul {
+          position: relative;
+          top: -17px;
+          animation: carousel 30s linear infinite 1s;
 
-      @media screen and (max-width: 1200px) {
-      }
-
-      @media screen and (max-width: 992px) {
-        width: 450px;
-      }
-
-      @media screen and (max-width: 576px) {
-        line-height: 35px;
-        width: 250px;
-      }
-
-      span {
-        &.imp {
-          font-family: var(--font-family);
-          font-size: 2em;
-          @media screen and (max-width: 992px) {
-            font-size: 1.8rem;
-        }
+          li {
+            list-style: none;
+            line-height: 90px;
+            white-space: nowrap;
+            border-right: 3px solid var(--color-additonal);
+            animation: cursor linear 1s infinite both, typing linear 30s both infinite 1s;
+          }
         }
       }
     }
   }
+}
 
+@keyframes typing {
+  0% {
+    width: 190px;
+  }
+  7%, 7.99%  {
+    width: 1px;
+  }
+  8% {
+    width: 1px;
+  }
+  19%, 20.99% {
+    width: 320px;
+  }
+  21% {
+    width: 320px;
+  }
+  32%, 32.99% {
+    width: 1px;
+  }
+  33% {
+    width: 1px;
+  }
+  42%, 43.99% {
+    width: 260px;
+  }
+  44% {
+    width: 260px;
+  }
+  53%, 53.99% {
+    width: 1px;
+  }
+  54% {
+    width: 1px;
+  }
+  63%, 64.99% {
+    width: 270px;
+  }
+  65% {
+    width: 270px;
+  }
+  74%, 74.99% {
+    width: 1px;
+  }
+  75% {
+    width: 1px;
+  }
+  82%, 83.99% {
+    width: 200px;
+  }
+  84% {
+    width: 200px;
+  }
+  91%, 91.99% {
+    width: 1px;
+  }
+  92% {
+    width: 1px;
+  }
+  99%, 99.99% {
+    width: 190px;
+  }
+  100% {
+    width: 190px;
+  }
+}
+
+@keyframes carousel {
+  0%, 7.99% {
+    top: -17px;
+  }
+  8%, 32.99% {
+    top: -107px;
+  }
+  33%, 53.99% {
+    top: -197px;
+  }
+  54%, 74.99% {
+    top: -287px;
+  }
+  75%, 91.99% {
+    top: -377px;
+  }
+  92%, 100% {
+    top: -17px;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right: none;
+  }
+  50% {
+    border-right: 3px solid var(--color-additonal);
+  }
+  to {
+    border-right: none;
+  }
+}
+
+
+.imp {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  letter-spacing: 8px;
+  line-height: 55px;
+}
 
 @-webkit-keyframes fade-in-fwd {
   0% {
@@ -220,6 +327,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fade-in-fwd {
   0% {
     -webkit-transform: translateZ(-80px);
@@ -232,3 +340,7 @@
     opacity: 1;
   }
 }
+
+//@keyframes words-corousel {
+//
+//}
