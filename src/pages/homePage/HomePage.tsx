@@ -4,8 +4,9 @@ import mint from "../../assets/images/mint-ghost.png";
 import peach from "../../assets/images/peach-ghost.png";
 
 import "./HomePage.scss";
+import { HeroAnimation } from "./HeroAnimation";
 
-export const HomePage = () => {
+export let HomePage = () => {
   return (
     <>
       <div className="ghost-shadow mint">
@@ -19,18 +20,7 @@ export const HomePage = () => {
           <div className="hero">
             Hi, my name is Paulina and I am
             <br />
-            <div className="hero-animation">
-              <div className="words-carousel">
-                <ul>
-                  <li className="gradient-text imp">reliable</li>
-                  <li className="gradient-text imp">hard-working</li>
-                  <li className="gradient-text imp">consistent</li>
-                  <li className="gradient-text imp">passionate</li>
-                  <li className="gradient-text imp">creative</li>
-                </ul>
-              </div>
-            </div>
-            <br />
+            {<HeroAnimation />}
             <span className="imp gradient-text">front-end developer</span>
             .
             <br />

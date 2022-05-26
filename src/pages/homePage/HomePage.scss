@@ -172,13 +172,25 @@
     color: var(--color-additonal);
     font-size: 2rem;
     letter-spacing: 1.5px;
-    line-height: 45px;
+    line-height: 55px;
+    @media screen and (max-width: 1640px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 1400px) {
+      line-height: 45px;
+    }
+
+    @media screen and (max-width: 1200px) {
+    }
 
     @media screen and (max-width: 992px) {
-      width: 450px;
+      width: 470px;
     }
 
     @media screen and (max-width: 576px) {
+      font-size: 1.3rem;
+      line-height: 35px;
       width: 250px;
     }
 
@@ -193,14 +205,27 @@
         ul {
           position: relative;
           top: -17px;
-          animation: carousel 30s linear infinite 1s;
+          animation: carousel 25s linear infinite;
 
           li {
             list-style: none;
             line-height: 90px;
             white-space: nowrap;
             border-right: 3px solid var(--color-additonal);
-            animation: cursor linear 1s infinite both, typing linear 30s both infinite 1s;
+            animation:
+                    cursor linear 1s infinite both,
+                    typing-reliable-first 2.5s steps(8) 1s,
+                    typing-hard-working 5s steps(24) 3.5s,
+                    typing-consistent 5s steps(20) 8.5s,
+                    typing-passionate 5s steps(20) 13.5s,
+                    typing-creative 5s steps(18) 18.5s,
+                    typing-reliable-second 2.5s steps(8) 23.5s,
+                    typing-reliable-first 2.5s steps(8) infinite 25s,
+                    typing-hard-working 5s steps(24) infinite 27.5s,
+                    typing-consistent 5s steps(20) infinite 32.5s,
+                    typing-passionate 5s steps(20) infinite 37.5s,
+                    typing-creative 5s steps(18) infinite 42.5s,
+                    typing-reliable-second 2.5s steps(8) infinite 47.5s;
           }
         }
       }
@@ -208,71 +233,127 @@
   }
 }
 
-@keyframes typing {
-  0% {
-    width: 190px;
-  }
-  7%, 7.99%  {
-    width: 1px;
-  }
-  8% {
-    width: 1px;
-  }
-  19%, 20.99% {
-    width: 320px;
-  }
-  21% {
-    width: 320px;
-  }
-  32%, 32.99% {
-    width: 1px;
-  }
-  33% {
-    width: 1px;
-  }
-  42%, 43.99% {
-    width: 260px;
-  }
-  44% {
-    width: 260px;
-  }
-  53%, 53.99% {
-    width: 1px;
-  }
-  54% {
-    width: 1px;
-  }
-  63%, 64.99% {
-    width: 270px;
-  }
-  65% {
-    width: 270px;
-  }
-  74%, 74.99% {
-    width: 1px;
-  }
-  75% {
-    width: 1px;
-  }
-  82%, 83.99% {
-    width: 200px;
-  }
-  84% {
-    width: 200px;
-  }
-  91%, 91.99% {
-    width: 1px;
-  }
-  92% {
-    width: 1px;
-  }
-  99%, 99.99% {
-    width: 190px;
-  }
-  100% {
-    width: 190px;
-  }
+//@keyframes typing
+//  from {
+//    animation: typing-reliable-first 2.5s steps(8, jump-both);
+//  }
+//{
+//    animation: typing-hard-working 5s steps(24, jump-both);
+//  }
+//{
+//    animation: typing-consistent 5s steps(20, jump-both);
+//  }
+//{
+//    animation: typing-passionate 5s steps(20, jump-both);
+//  }
+// {
+//    animation: typing-creative 5s steps(18, jump-both);
+//  }
+//to {
+//    animation: typing-reliable-second 2.5s steps(8, jump-both);
+//  }
+
+
+@keyframes typing-reliable-first {
+  0% { width: 190px }
+  90%, to { width: 1px}
 }
+
+@keyframes typing-hard-working {
+  0%, 5% {width: 1px}
+  50%, 60% {width: 320px}
+  90%, 100% {width: 1px}
+}
+
+@keyframes typing-consistent {
+  0%, 5% {width: 1px}
+  50%, 60% {width: 260px}
+  90%, to {width: 1px}
+}
+
+@keyframes typing-passionate {
+  0%, 5% {width: 1px}
+  50%, 60% {width: 270px}
+  90%, 100% {width: 1px}
+}
+
+@keyframes typing-creative {
+  0%, 5% {width: 1px}
+  50%, 60% {width: 200px}
+  90%, 100% {width: 1px}
+}
+
+@keyframes typing-reliable-second {
+  0%, 5% { width: 1px }
+  95%, 100% { width: 190px}
+}
+
+
+//@keyframes typing {
+//  0% {
+//    width: 190px;
+//  }
+//  7%, 7.99%  {
+//    width: 1px;
+//  }
+//  8% {
+//    width: 1px;
+//  }
+//  19%, 20.99% {
+//    width: 320px;
+//  }
+//  21% {
+//    width: 320px;
+//  }
+//  32%, 32.99% {
+//    width: 1px;
+//  }
+//  33% {
+//    width: 1px;
+//  }
+//  42%, 43.99% {
+//    width: 260px;
+//  }
+//  44% {
+//    width: 260px;
+//  }
+//  53%, 53.99% {
+//    width: 1px;
+//  }
+//  54% {
+//    width: 1px;
+//  }
+//  63%, 64.99% {
+//    width: 270px;
+//  }
+//  65% {
+//    width: 270px;
+//  }
+//  74%, 74.99% {
+//    width: 1px;
+//  }
+//  75% {
+//    width: 1px;
+//  }
+//  82%, 83.99% {
+//    width: 200px;
+//  }
+//  84% {
+//    width: 200px;
+//  }
+//  91%, 91.99% {
+//    width: 1px;
+//  }
+//  92% {
+//    width: 1px;
+//  }
+//  99%, 99.99% {
+//    width: 190px;
+//  }
+//  100% {
+//    width: 190px;
+//  }
+//}
 
 @keyframes carousel {
   0%, 7.99% {
@@ -297,22 +378,35 @@
 
 @keyframes cursor {
   from {
-    border-right: none;
+    border-right: 3px solid transparent;
   }
   50% {
     border-right: 3px solid var(--color-additonal);
   }
   to {
-    border-right: none;
+    border-right: 3px solid transparent;
   }
 }
 
-
 .imp {
   font-family: var(--font-family);
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
   letter-spacing: 8px;
   line-height: 55px;
+  @media screen and (max-width: 992px) {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+}
+
+.wrap {
+  white-space: nowrap;
+  animation: cursor linear 1s infinite;
 }
 
 @-webkit-keyframes fade-in-fwd {
@@ -341,6 +435,3 @@
   }
 }
 
-//@keyframes words-corousel {
-//
-//}
