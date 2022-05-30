@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { Header } from "./modules/header/Header";
 import { Footer } from "./modules/footer/Footer";
 import { PageContent } from "./modules/PageContent";
+import { Preloader } from "./pages/preloader/Preloader";
 
 import "./App.scss";
 
 function App() {
-  return (
+  const [showContent, setShowContent] = useState(false);
+
+  setTimeout(() => {
+    setShowContent(true);
+  }, 3000);
+
+  const pageContent = (
     <>
       <Router>
         <div className="app-wrapper">
@@ -19,6 +26,7 @@ function App() {
       </Router>
     </>
   );
+  return <>{showContent ? pageContent : <Preloader />}</>;
 }
 
 export default App;

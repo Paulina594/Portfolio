@@ -20,7 +20,7 @@ export let HomePage = () => {
           <div className="hero">
             Hi, my name is Paulina and I am
             <br />
-            {<HeroAnimation />}
+            {/*{<HeroAnimation />}*/}
             <span className="imp gradient-text">front-end developer.</span>
             Please, take a look around to find out more about me and my work.
           </div>
