@@ -4,7 +4,7 @@ import mint from "../../assets/images/mint-ghost.png";
 import peach from "../../assets/images/peach-ghost.png";
 
 import "./HomePage.scss";
-import { HeroAnimation } from "./HeroAnimation";
+// import { HeroAnimation } from "./HeroAnimation";
 
 export let HomePage = () => {
   return (

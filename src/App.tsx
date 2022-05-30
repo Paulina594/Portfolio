@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import { Header } from "./modules/header/Header";
@@ -13,7 +13,7 @@ function App() {
 
   setTimeout(() => {
     setShowContent(true);
-  }, 3000);
+  }, 4500);
 
   const pageContent = (
     <>

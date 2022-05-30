@@ -171,6 +171,9 @@
   @media screen and (max-width: 1400px) {
     max-width: 100%;
   }
+  @media sreen and (max-width: 992px) {
+    padding: 0rem 20px 3rem 15px;
+  }
   @media screen and (max-width: 576px) {
     font-size: 14px;
     padding: 3rem 20px 3rem 15px;
@@ -188,7 +191,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 6rem 0 4rem 0;
+    padding: 12rem 0 4rem 0;
     color: var(--color-additonal);
     font-size: 2rem;
     letter-spacing: 1.5px;
@@ -205,10 +208,12 @@
     }
 
     @media screen and (max-width: 992px) {
+      padding-top: 0;
       width: 470px;
     }
 
     @media screen and (max-width: 576px) {
+      padding-top: 5rem;
       font-size: 1.3rem;
       line-height: 35px;
       width: 250px;
@@ -234,6 +239,7 @@
   font-weight: 800;
   letter-spacing: 8px;
   line-height: 55px;
+  width: fit-content;
   @media screen and (max-width: 992px) {
     font-size: 1.8rem;
     letter-spacing: 5px;
