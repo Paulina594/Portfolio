@@ -17,10 +17,10 @@ export const HomePage = () => {
   return (
     <>
       <div className="ghost-shadow mint">
-        <img src={mint} alt="mint shadow" />
+        <img className="scale-up-center-ghost" src={mint} alt="mint shadow" />
       </div>
       <div className="ghost-shadow peach">
-        <img src={peach} alt="peach shadow" />
+        <img className="scale-up-center-ghost" src={peach} alt="peach shadow" />
       </div>
       <div className="container">
         <div className="hero-wrapper fade-in-fwd">

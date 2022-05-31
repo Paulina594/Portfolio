@@ -13,7 +13,7 @@ function App() {
 
   setTimeout(() => {
     setShowContent(true);
-  }, 4500);
+  }, 3600);
 
   const pageContent = (
     <>
