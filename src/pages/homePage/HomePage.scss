@@ -198,9 +198,11 @@
     line-height: 55px;
     @media screen and (max-width: 1640px) {
       font-size: 1.5rem;
+      padding-top: 6rem;
     }
 
     @media screen and (max-width: 1400px) {
+
       line-height: 45px;
     }
 
@@ -217,6 +219,17 @@
       font-size: 1.3rem;
       line-height: 35px;
       width: 250px;
+    }
+    .typewriter-wrapper {
+      height: 55px;
+      width: fit-content;
+      animation: cursor 1s linear infinite both;
+      @media screen and (max-width: 1400px) {
+        height: 45px;
+      }
+      @media screen and (max-width: 576px) {
+        height: 35px;
+      }
     }
   }
 }

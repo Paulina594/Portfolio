@@ -4,9 +4,16 @@ import mint from "../../assets/images/mint-ghost.png";
 import peach from "../../assets/images/peach-ghost.png";
 
 import "./HomePage.scss";
-// import { HeroAnimation } from "./HeroAnimation";
+import { Typewriter } from "../../components/typewriter/Typewriter";
 
-export let HomePage = () => {
+export const HomePage = () => {
+  const words = [
+    "reliable",
+    "hard-working",
+    "consistent",
+    "passionate",
+    "creative",
+  ];
   return (
     <>
       <div className="ghost-shadow mint">
@@ -20,7 +27,9 @@ export let HomePage = () => {
           <div className="hero">
             Hi, my name is Paulina and I am
             <br />
-            {/*{<HeroAnimation />}*/}
+            <div className="typewriter-wrapper">
+              {<Typewriter words={words} />}
+            </div>
             <span className="imp gradient-text">front-end developer.</span>
             Please, take a look around to find out more about me and my work.
           </div>

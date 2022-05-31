@@ -1,33 +1,69 @@
-import { useState } from "react";
-//
-// export const Typewriter = (props: { keywords: string[] }) => {
-//   let loopNum = 0;
-//   let currentKeyword: string | null = null;
-//   let isDeleting = false;
-//   let text: string|undefined = "";
-//   let delta = null;
-//   let period = 500;
-//
-//   function tick() {
-//     text = currentKeyword?.substring(0, text.length + (isDeleting ? -1 : 1));
-//
-//     delta = 200 - Math.random() * 100;
-//
-//     if (isDeleting) {
-//       delta /= 2;
-//     }
-//
-//     if (!isDeleting && text === currentKeyword) {
-//       delta = period;
-//       isDeleting = true;
-//     } else if (isDeleting && text === "") {
-//       isDeleting = false;
-//       loopNum++;
-//       delta = 500;
-//     }
-//
-//     setTimeout(() => {
-//       tick();
-//     }, delta);
-//   }
-// };
+import {
+  concat,
+  concatMap,
+  delay,
+  from,
+  ignoreElements,
+  interval,
+  map,
+  Observable,
+  of,
+  repeat,
+  take,
+  tap,
+} from "rxjs";
+import { useEffect, useState } from "react";
+
+export type TypewriterProps = {
+  words: string[];
+};
+
+export const Typewriter = (props: TypewriterProps) => {
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    const wordRoulette$ = from(props.words).pipe(
+      concatMap((word) => createDelayedTypeEffect(word)),
+      repeat()
+    );
+
+    const sub = wordRoulette$.subscribe((word) => setText(word));
+
+    return () => sub.unsubscribe();
+  }, [props.words]);
+
+  return (
+    <>
+      <div className="imp gradient-text">{text}</div>
+    </>
+  );
+};
+
+function createDelayedTypeEffect(word: string): Observable<string> {
+  return concat(
+    createWordWriter(word, 200),
+    createDelay(1200),
+    createWordWriter(word, 100, true)
+  );
+}
+
+function createDelay(delayTime: number): Observable<any> {
+  return of("").pipe(delay(delayTime), ignoreElements());
+}
+
+function createWordWriter(
+  word: string,
+  speed: number,
+  backwards = false
+): Observable<string> {
+  return interval(speed).pipe(
+    map((i) => {
+      if (backwards) {
+        return word.slice(0, word.length - i - 1);
+      } else {
+        return word.substring(0, i + 1);
+      }
+    }),
+    take(word.length)
+  );
+}
