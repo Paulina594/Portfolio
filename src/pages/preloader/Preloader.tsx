@@ -9,14 +9,12 @@ export const Preloader = () => {
     <>
       <div className="loader-wrapper">
         <div className="loader">
-          {/*<div className="pd-logo">*/}
           <object
             id="logo-animation"
             type="image/svg+xml"
-            data={process.env.PUBLIC_URL + "/pd2.svg"}
+            data={process.env.PUBLIC_URL + "/pd2s.svg"}
             aria-label="pd logo"
           />
-          {/*</div>*/}
 
           <div className="logo-wrapper">
             <div className="first-name">

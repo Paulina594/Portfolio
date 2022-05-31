@@ -27,7 +27,7 @@
     min-height: 100vh;
 
       #logo-animation {
-        animation: svg-animation 2.4s linear 1 both;
+        animation: svg-animation 2s linear 1 both;
         width: 150px;
         height: 150px;
         @media screen and (max-width: 576px) {
@@ -123,7 +123,7 @@
   transform: translate(-50%, -50%);
   opacity: 0;
   padding: 2rem 0 0 2rem;
-  animation: logo 1s cubic-bezier(.77,0,0,1) 1 forwards 2.4s;
+  animation: logo 1s cubic-bezier(.77,0,0,1) 1 forwards 2s;
   @media screen and (max-width: 1400px) {
     padding: 2rem 4rem;
   }
@@ -139,17 +139,17 @@
       color: var(--color-peach);
       font-size: 2.5rem;
       font-weight: 800;
-      animation: initials-size 0.7s ease-out both 2.30s;
+      animation: initials-size 0.7s ease-out both 1.9s;
       @media screen and (max-width: 576px) {
-        animation: initials-size576 0.7s ease-out both 2.30s;
+        animation: initials-size576 0.7s ease-out both 1.9s;
       }
     }
 
     .name-token-anim-inner {
-      animation: firstname-slide 1s cubic-bezier(.77,.45,.27,.66) forwards 3.4s;
+      animation: firstname-slide 1s cubic-bezier(.77,.45,.27,.66) forwards 2.6s;
       @media screen and (max-width: 576px) {
         font-size: 1.5rem;
-        animation: firstname-slide576 1s cubic-bezier(.77,.45,.27,.66) forwards 3.4s;
+        animation: firstname-slide576 1s cubic-bezier(.77,.45,.27,.66) forwards 2.6s;
       }
     }
   }
@@ -162,17 +162,17 @@
       color: var(--color-mint);
       font-size: 2.5rem;
       font-weight: 800;
-      animation: initials-size 0.7s ease-out both 2.30s;
+      animation: initials-size 0.7s ease-out both 1.9s;
       @media screen and (max-width: 576px) {
-        animation: initials-size576 0.7s ease-out both 2.30s;
+        animation: initials-size576 0.7s ease-out both 1.9s;
       }
     }
 
     .name-token-anim-inner {
-      animation: surname-slide 1s cubic-bezier(.77,.45,.27,.66) forwards 3.4s;
+      animation: surname-slide 1s cubic-bezier(.77,.45,.27,.66) forwards 2.6s;
       @media screen and (max-width: 576px) {
         font-size: 1.5rem;
-        animation: surname-slide576 1s cubic-bezier(.77,.45,.27,.66) forwards 3.4s;
+        animation: surname-slide576 1s cubic-bezier(.77,.45,.27,.66) forwards 2.6s;
       }
     }
   }
