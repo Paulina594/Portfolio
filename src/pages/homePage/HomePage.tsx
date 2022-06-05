@@ -22,19 +22,19 @@ export const HomePage = () => {
       <div className="ghost-shadow peach">
         <img className="scale-up-center-ghost" src={peach} alt="peach shadow" />
       </div>
-      <div className="container">
-        <div className="hero-wrapper fade-in-fwd">
-          <div className="hero">
-            Hi, my name is Paulina and I am
-            <br />
-            <div className="typewriter-wrapper">
-              {<Typewriter words={words} />}
-            </div>
-            <span className="imp gradient-text">front-end developer.</span>
-            Please, take a look around to find out more about me and my work.
+      {/*<div className="container">*/}
+      <div className="hero-wrapper fade-in-fwd">
+        <div className="hero">
+          Hi, my name is Paulina and I am
+          <br />
+          <div className="typewriter-wrapper">
+            {<Typewriter words={words} />}
           </div>
+          <span className="imp gradient-text">front-end developer.</span>
+          Please, take a look around to find out more about me and my work.
         </div>
       </div>
+      {/*</div>*/}
     </>
   );
 };

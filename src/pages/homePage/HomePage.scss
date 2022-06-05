@@ -163,24 +163,27 @@
   height: fit-content;
   padding: 12rem 0 6rem 0;
   @media screen and (min-width: 1600px) {
-    max-width: 1520px;
-    padding: 0 0 8rem 2rem;
-    padding-top: 10%;
+    width: 70%;
+    padding: 5% 0 8rem 2rem;
+    //padding-top: 10%;
   }
   @media screen and (max-width: 1600px) {
     max-width: 1320px;
-    padding: 0 0 6rem 2rem;
-    padding-top: 7%;
+    padding: 7% 0 6rem 2rem;
   }
   @media screen and (max-width: 1400px) {
     max-width: 100%;
+    padding: 10% 4rem 5rem 4rem;
   }
-  @media sreen and (max-width: 992px) {
-    padding: 0rem 20px 3rem 15px;
+  @media screen and (max-width: 992px) {
+    padding: 25% 4rem 5rem 4rem;
   }
   @media screen and (max-width: 576px) {
     font-size: 14px;
-    padding: 3rem 20px 3rem 15px;
+    padding: 25% 20px 5rem 15px;
+  }
+  @media screen and (orientation: landscape) {
+    padding-bottom: 14rem;
   }
   @media screen and (max-height: 650px) and (max-width: 576px) {
     padding-top: 0;
@@ -218,7 +221,6 @@
     }
 
     @media screen and (max-width: 576px) {
-      padding-top: 5rem;
       font-size: 1.3rem;
       line-height: 35px;
       width: 250px;
