@@ -8,17 +8,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
   @media screen and (max-width: 567px) {
     font-size: 11px;
   }
 
   .tech {
     display: flex;
-    flex-basis: 25%;
+    flex-basis: 20%;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 60px;
     margin: 0 auto;
     @media screen and (max-width: 567px) {
       padding: 20px;
@@ -27,10 +27,11 @@
     .tech-icon {
       height: 100px;
       padding-bottom: 20px;
-      transition: .5s;
+      transition: 0.5s;
       @media screen and (max-width: 567px) {
         height: 70px;
       }
+
       &:hover {
         transform: scale(1.25);
       }

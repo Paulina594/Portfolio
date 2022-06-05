@@ -1,11 +1,16 @@
 import React from "react";
 
-export const ProjectCard = (props: any) => {
+import "./ProjectCard.scss";
 
+export const ProjectCard = (props: any) => {
   return (
-    <div className="card-wrapper">
-      <div className="image"></div>
-      <div className="title">{props.name}</div>
+    <div className="card-wrapper project slide-in-fwd-center">
+      <div className="card">
+        <div className="column-left image">
+          <img src={props.image} alt="" />
+        </div>
+        <div className="column-right title">{props.name}</div>
+      </div>
     </div>
-  )
-}
+  );
+};
