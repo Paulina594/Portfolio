@@ -1,6 +1,7 @@
 .row {
   display: flex;
   flex-direction: row;
+  column-gap: 50px;
   width: 100%;
   padding-bottom: 142px;
   height: fit-content;
@@ -87,11 +88,16 @@
         display: block;
         margin-bottom: 20px;
         padding: 10px;
+        font-size: 22px;
         background-color: transparent;
         border-radius: 10px;
         border: 2px solid var(--color-mint);
         font-family: var(--font-family);
         color: var(--color-additonal);
+
+        @media screen and (max-width: 576px) {
+          font-size: 13px;
+        }
 
         &:focus, &:focus {
           border: 2px solid var(--color-mint);

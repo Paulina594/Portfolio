@@ -6,12 +6,16 @@
     color: var(--color-additonal);
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 25px;
     text-transform: capitalize;
     width: fit-content;
     margin: 0 1rem;
     cursor: pointer;
+
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+    }
 
     &:after {
       display: block;
@@ -51,6 +55,10 @@
   color: var(--color-additonal);
   font-size: 2rem;
   cursor: pointer;
+
+  @media screen and (max-width: 576px) {
+    font-size: 1.8rem;
+  }
 }
 
 .navbar-menu {

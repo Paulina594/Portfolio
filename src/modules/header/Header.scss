@@ -29,13 +29,14 @@
   }
 
   .logo {
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 500;
     letter-spacing: 1px;
     color: var(--color-additonal);
     margin-right: 2rem;
+
     @media screen and (max-width: 576px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin-right: 10px;
     }
 
@@ -56,14 +57,14 @@
         span {
           &.initial {
             overflow: hidden;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             font-weight: 800;
-          }
+
 
           @media screen and (max-width: 576px) {
-            font-size: 2rem;
+            font-size: 1.7rem;
           }
-
+        }
           &.first {
             color: var(--color-peach);
           }
@@ -81,6 +82,7 @@
     flex-direction: row;
     align-content: space-between;
     align-items: center;
+
     @media screen and (max-width: 1200px) {
       display: none;
     }
