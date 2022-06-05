@@ -35,14 +35,21 @@
 <p><a href="https://www.buymeacoffee.com/paulina594"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/paulina594" /></a><a href="https://ko-fi.com/paulina594"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="https://ko-fi.com/paulina594" /> </a> </p>
 
 <br/>
+<br/>
 
 -----------------------------------------------------------------------------------
 
 <br/>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=paulina594&show_icons=true&locale=en&layout=compact" alt="paulina594" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=paulina594&show_icons=true&locale=en&layout=compact" alt="paulina594" /></p>
+
+<br/>
+<br/>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=paulina594&show_icons=true&locale=en" alt="paulina594" /></p>
+
+<br/>
+<br/>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=paulina594&" alt="paulina594" /></p>
 
@@ -128,15 +135,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### HomePage
 
-[![home.png](https://i.postimg.cc/XvDWC3g2/home.png)](https://postimg.cc/R3fykkyf)
-
 <img src="https://i.postimg.cc/XvDWC3g2/home.png" alt="homePage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, hero text in the middle of the page and two ghost shadows in the background" />
 
 ### AboutMePage
 
-[![about.png](https://i.postimg.cc/Gtmp1zzN/about.png)](https://postimg.cc/k6LCQQ0F)
-
-<img src="https://i.postimg.cc/Gtmp1zzN/about.png" alt="aboutMePage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, in the middle odf the page two columns title and descrition on the left and photo on the right" />
+<img src="https://ibb.co/P1wRLgf" alt="aboutMePage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, in the middle odf the page two columns title and descrition on the left and photo on the right" />
 
 ### TechnologiesPage
 
