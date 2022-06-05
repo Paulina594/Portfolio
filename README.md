@@ -125,37 +125,31 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### HomePage
 
-<img src="https://i.postimg.cc/sgzj3wLR/home.png" alt="homePage" />
+<img src="https://i.postimg.cc/wMmjBn5t/Zrzut-ekranu-2022-06-05-153604.png" alt="homePage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, hero text in the middle of the page and two ghost shadows in the background" />
 
 ### AboutMePage
 
-<img src="https://i.postimg.cc/TP4q8L3B/aboutme.png" alt="aboutMePage" />
+<img src="https://i.postimg.cc/50j5N5PH/Zrzut-ekranu-2022-06-05-153657.png" alt="aboutMePage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, in the middle odf the page two columns title and descrition on the left and photo on the right" />
 
 ### TechnologiesPage
 
-<img src="https://i.postimg.cc/yxMs2TMW/technologies.png" alt="technologiesPage" />
+<img src="https://i.postimg.cc/yxMs2TMW/technologies.png" alt="technologiesPage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, in the middle part tiles with technology icons and technology names underneath" />
 
 ### ProjectsPage
 
-<img src="https://i.postimg.cc/jSrFsV3q/projects.png" alt="projectsPage" />
+<img src="https://i.postimg.cc/jSrFsV3q/projects.png" alt="projectsPage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, main part show information that this section is under developmnet, on the right side matching graphics" />
 
 ### ContactPage
 
-<img src="https://i.postimg.cc/wM89G28M/contact.png" alt="contactPage" />
+<img src="https://i.postimg.cc/wM89G28M/contact.png" alt="contactPage- paulina drozdz logo in the right corner, menu in the left corner, footer with social media center aligned on the bottom of the page, in the middle part two columns, left one with description and right one with contact form" />
 
 ## Project status
 
 Under development. 
 Need adding: 
-- functionality to social buttons in footer
 - functionality to contact form
-- functionality to email on contact page
 - project card
 - projects implementation
-- entrance animations
-- splash screen
-- dark/light mode switch
-- polish/english lunguage switch
 
 ## Other tools used 
 - FontAmesome
