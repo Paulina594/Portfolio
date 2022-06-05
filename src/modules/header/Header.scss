@@ -7,8 +7,6 @@
     padding: 2rem 2rem;
   }
   @media screen and (max-width: 1600px) {
-    //width: 1320px;
-    //margin: 0 auto;
     padding: 2rem 2rem;
   }
   @media screen and (max-width: 1400px) {
@@ -33,7 +31,7 @@
   .logo {
     font-size: 2rem;
     font-weight: 500;
-letter-spacing: 1px;
+    letter-spacing: 1px;
     color: var(--color-additonal);
     margin-right: 2rem;
     @media screen and (max-width: 576px) {
