@@ -25,7 +25,7 @@ export const ContactPage = () => {
             <br />
             <br />
             <div className="email-contact">
-              You can also send me an e-mail on:
+              You can also send me an e&#8209;mail on:
             </div>
             <div className="email-link">
               <a href="mailto: paulina.drozdz.me@gmail.com">

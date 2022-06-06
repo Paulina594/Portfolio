@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { ProjectCard } from "../../components/projectCard/ProjectCard";
 
-// import img3 from "../../assets/images/under-construction.png";
 import "./ProjectsPage.scss";
 import htmlIcon from "../../assets/images/tech-icons/html5.svg";
 import cssIcon from "../../assets/images/tech-icons/css3.svg";
@@ -12,17 +11,72 @@ import tsIcon from "../../assets/images/tech-icons/typescript.svg";
 import reactIcon from "../../assets/images/tech-icons/react.svg";
 
 const projects = [
-  { id: 1, name: "Portfolio", image: htmlIcon, description: "" },
+  {
+    id: 1,
+    name: "Portfolio",
+    image: htmlIcon,
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
+  },
   {
     id: 2,
     name: "Magic ball - Your personal advisor",
     image: cssIcon,
-    description: "",
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
   },
-  { id: 3, name: "Stoper", image: sassIcon, description: "" },
-  { id: 4, name: "Wheater App", image: jsIcon, description: "" },
-  { id: 5, name: "PESEL validator", image: tsIcon, description: "" },
-  { id: 6, name: "Form with validation", image: reactIcon, description: "" },
+  {
+    id: 3,
+    name: "Stoper",
+    image: sassIcon,
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
+  },
+  {
+    id: 4,
+    name: "Wheater App",
+    image: jsIcon,
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
+  },
+  {
+    id: 5,
+    name: "PESEL validator",
+    image: tsIcon,
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
+  },
+  {
+    id: 6,
+    name: "Form with validation",
+    image: reactIcon,
+    description: {
+      text: "",
+      technologies: "",
+      preview: "",
+      github: "",
+    },
+  },
 ];
 
 export const ProjectsPage = () => {
@@ -32,9 +86,9 @@ export const ProjectsPage = () => {
       name={project.name}
       image={project.image}
       description={project.description}
+      // showDescription={true}
     />
   ));
-
   return (
     <>
       <div className="title-wrapper">

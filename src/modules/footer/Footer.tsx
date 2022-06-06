@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="footer slide-in-bottom">
         <div className="social-container">
           <a
-            href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+            href="https://pl.linkedin.com/in/paulina-drozdz-reliable-front-end-developer"
             target="_blank"
             rel="noreferrer"
           >
@@ -36,7 +36,9 @@ export const Footer = () => {
             <i className="fa-brands fa-facebook social" />
           </a>
         </div>
-        <p className="copyrights">© Copyright 2022. All rights reserved</p>
+        <p className="copyrights">
+          © Designed and build with love <span>by Paulina Drożdż</span>
+        </p>
         <div className="line left" />
         <div className="line right" />
       </div>
