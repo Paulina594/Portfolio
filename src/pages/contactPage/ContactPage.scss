@@ -147,12 +147,14 @@
 .social-wrapper {
   padding-top: 100px;
   color: var(--color-additonal);
+  font-size: 20px;
+
   @media screen and (max-width: 1200px) {
     width: fit-content;
   }
   @media screen and (max-width: 576px) {
     width: fit-content;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
@@ -162,6 +164,7 @@
     left: 50%;
     width: 400px;
     height: 100px;
+
     @media screen and (max-width: 1200px) {
       width: fit-content;
     }
@@ -183,7 +186,6 @@
       position: relative;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%);
       font-size: 1.5rem;
       animation: arrow 3s infinite linear;
     }

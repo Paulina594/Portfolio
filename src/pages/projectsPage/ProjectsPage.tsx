@@ -9,6 +9,7 @@ import sassIcon from "../../assets/images/tech-icons/sass.svg";
 import jsIcon from "../../assets/images/tech-icons/javascript.svg";
 import tsIcon from "../../assets/images/tech-icons/typescript.svg";
 import reactIcon from "../../assets/images/tech-icons/react.svg";
+import { ProjectDescriptionModal } from "../../components/projectDescriptionModal/ProjectDescriptionModal";
 
 const projects = [
   {
@@ -86,30 +87,16 @@ export const ProjectsPage = () => {
       name={project.name}
       image={project.image}
       description={project.description}
-      // showDescription={true}
     />
   ));
   return (
-    <>
+    <div className="all" style={{}}>
       <div className="title-wrapper">
         <h1 className="gradient-text slide-in-left">Projects</h1>
       </div>
       <div className="container">
-        <div className="row projects">
-          {projectsList}
-          {/*<div className="col-left slide-in-fwd-center">*/}
-          {/*  I'm sorry, this page is currently under development.{" "}*/}
-          {/*  <i className="fa-solid fa-person-digging" />*/}
-          {/*</div>*/}
-          {/*<div className="col-right fade-in">*/}
-          {/*  <img*/}
-          {/*    className="construction"*/}
-          {/*    src={img3}*/}
-          {/*    alt="building site flat design"*/}
-          {/*  />*/}
-          {/*</div>*/}
-        </div>
+        <div className="row projects">{projectsList}</div>
       </div>
-    </>
+    </div>
   );
 };

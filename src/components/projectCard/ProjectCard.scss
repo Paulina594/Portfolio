@@ -5,7 +5,6 @@
   margin: 0 auto 90px auto;
 }
 
-
 .card {
   display: flex;
   flex-direction: row;
@@ -19,7 +18,7 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(120%);
+    transform: scale(105%);
   }
 
   .column-left {
@@ -44,7 +43,7 @@
 }
 
 .card:hover img {
-  transform: scale(190%);
+  transform: scale(150%);
 }
 
 .description {
