@@ -30,7 +30,7 @@ body {
   color: var(--color-additonal);
   @media screen and (min-width: 1600px) {
     width: 70%;
-
+    padding-bottom: 300px;
   }
   @media screen and (max-width: 1600px) {
     max-width: 1320px;
