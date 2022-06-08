@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import ReCAPTCHA from "react-google-recaptcha";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +14,12 @@ export const ContactPage = () => {
       &#112;&#97;&#117;&#108;&#105;&#110;&#97;&#46;&#100;&#114;&#111;&#122;&#100;&#122;&#46;&#109;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
     </a>
   );
+
+  const [isChecked, setIsChecked] = useState(false);
+
+  function handleChange(isChecked: boolean) {
+    setIsChecked(true);
+  }
 
   return (
     <>
@@ -46,6 +54,12 @@ export const ContactPage = () => {
               <label htmlFor="message">
                 <textarea placeholder="Message" rows={20} />
               </label>
+              <ReCAPTCHA
+                sitekey="6LcrdlUgAAAAACOAjUG7HXGJo-i5uAlpjQuovSdU"
+                onChange={() => handleChange(isChecked)}
+                theme="dark"
+                hl="en-GB"
+              />
               <button className="submitBtn">
                 <div className="svg-wrapper-1">
                   <div className="svg-wrapper">
