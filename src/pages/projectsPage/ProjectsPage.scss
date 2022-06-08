@@ -1,17 +1,13 @@
-.fa-person-digging {
-    font-size: 1.5rem;
-    line-height: 30px;
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
-img.construction {
-    width: 100%;
-    opacity: .7;
-    @media screen and (max-width: 1200px) {
-        padding-top: 50px;
-        width: 70%;
-    }
-    @media screen and (max-width: 992px) {
-        padding-top: 70px;
-        width: 100%;
-    }
+
+.all {
+overflow: initial;
+
 }

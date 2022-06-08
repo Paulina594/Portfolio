@@ -8,6 +8,11 @@
     font-family: var(--font-family);
 }
 
+.overflowHidden {
+    height: 100vh;
+    overflow: hidden;
+}
+
 :root {
     --font-family: 'Comfortaa', sans-serif;
 

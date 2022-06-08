@@ -115,6 +115,7 @@
         margin: 20px auto;
         padding: 10px 20px;
         border-radius: 10px;
+        font-size: 22px;
         background-color: transparent;
         border: 2px solid var(--color-additonal);
         color: var(--color-additonal);
@@ -122,6 +123,10 @@
         transition: .5s;
         transition-timing-function: ease-in-out;
         cursor: pointer;
+
+        @media screen and (max-width: 576px) {
+          font-size: 13px;
+        }
 
         &:hover {
           border-color: var(--color-peach);
@@ -142,26 +147,29 @@
 .social-wrapper {
   padding-top: 100px;
   color: var(--color-additonal);
+  font-size: 20px;
+
   @media screen and (max-width: 1200px) {
     width: fit-content;
   }
   @media screen and (max-width: 576px) {
     width: fit-content;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
   .social-section {
     position: absolute;
-    bottom: 65px;
+    bottom: 90px;
     left: 50%;
-    transform: translate(-50%);
     width: 400px;
     height: 100px;
+
     @media screen and (max-width: 1200px) {
       width: fit-content;
     }
     @media screen and (max-width: 576px) {
+      bottom: 65px;
       width: fit-content;
       font-size: 12px;
     }
@@ -178,7 +186,6 @@
       position: relative;
       bottom: 0;
       left: 50%;
-      transform: translate(-50%);
       font-size: 1.5rem;
       animation: arrow 3s infinite linear;
     }
