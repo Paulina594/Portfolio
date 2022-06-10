@@ -1,0 +1,108 @@
+form {
+  width: 100%;
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    @media screen and (max-width: 1640px) {
+
+    }
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  input, textarea {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 22px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--color-mint);
+    font-family: var(--font-family);
+    color: var(--color-additonal);
+
+    @media screen and (max-width: 576px) {
+      font-size: 13px;
+    }
+
+    &:focus, &:focus {
+      border: 2px solid var(--color-mint);
+      outline: none;
+      box-shadow: 0 0 5px var(--color-mint);
+    }
+
+    &::placeholder {
+      color: var(--color-additonal);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+
+button.submitBtn {
+  font-family: inherit;
+  font-size: 20px;
+  background: transparent;
+  color: var(--color-additonal);
+  padding: 0.7em 1em 0.7em 0.9em;
+  margin: 2rem auto 0;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--color-mint);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+
+  &:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+
+  &:hover span {
+    transform: translateX(5em);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+//#surname {
+//  display: none;
+//  visibility: hidden;
+//}
