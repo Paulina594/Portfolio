@@ -5,7 +5,7 @@ import { ContactFormStatus, ContactMessage } from "../contactForm/ContactForm";
 import "./ContactFormView.scss";
 
 export type ContactFormViewProps = {
-  onFormSubmit: (contactData: ContactMessage) => void;
+  onFormSubmit: (contactData: ContactMessage) => any;
   formSubmitStatus: ContactFormStatus;
   setSubmitStatus: () => void;
 };
@@ -16,9 +16,8 @@ export const ContactFormView = (props: ContactFormViewProps) => {
   useEffect(() => {
     if (formSubmitStatus === 1) {
       (document.getElementById("form") as HTMLFormElement).reset();
-    } else if (formSubmitStatus === 2) {
-      alert("Something went wrong!");
     }
+
     return () => setSubmitStatus();
   }, [setSubmitStatus, formSubmitStatus]);
 
