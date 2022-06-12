@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
@@ -13,18 +13,6 @@ export const ContactPage = () => {
       &#112;&#97;&#117;&#108;&#105;&#110;&#97;&#46;&#100;&#114;&#111;&#122;&#100;&#122;&#46;&#109;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
     </a>
   );
-
-  // function validateForm(form) {
-  //   var x = document.forms["contact_form"]["honeypot"].value;
-  //   if (x == "" || x == null) {
-  //     // if the honeypot was ignored, it's a hu-mon
-  //     form.action = "https://..."; // link to process form and redirect to thank you
-  //   } else {
-  //     // the honeypot was filled in, it's a robot
-  //     form.action = "http://..."; // link directly to thank you without actually processing form
-  //     return false;
-  //   }
-  // }
 
   return (
     <>

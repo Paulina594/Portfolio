@@ -31,24 +31,52 @@ export const ContactForm = () => {
       },
     }).then((response) => {
       if (response.status !== 200) {
-        throw new Error(`Server returned ${response.status} response!`);
+        console.log(response.status);
         setFormSubmitStatus(ContactFormStatus.ERROR);
+        // throw new Error(`Server returned ${response.status} response!`);
       }
       setFormSubmitStatus(ContactFormStatus.SUCCESS);
     });
   }
 
   function onFormSubmit(message: ContactMessage) {
-    toast.promise(sendMail2(message), {
-      loading: "Sending...",
-      success: <b>Thanks for your message! It has been sent successfully.</b>,
-      error: (
-        <b>
-          Sorry, there was a problem sending your message. Please, try again
-          later.
-        </b>
-      ),
-    });
+    toast.promise(
+      sendMail2(message),
+      {
+        loading: "Sending...",
+        success: (
+          <b style={{ paddingLeft: "20px", lineHeight: "30px" }}>
+            Thanks for your message! It has been sent successfully.
+          </b>
+        ),
+        error: (
+          <b style={{ paddingLeft: "20px", lineHeight: "30px" }}>
+            Sorry, there was a problem sending your message. Please, try again
+            later.
+          </b>
+        ),
+      },
+      {
+        style: {
+          minWidth: "280px",
+          // backgroundColor: "#cbffc0",
+        },
+        success: {
+          duration: 5000,
+          style: {
+            minWidth: "280px",
+            backgroundColor: "#edf9f1",
+          },
+        },
+        error: {
+          duration: 5000,
+          style: {
+            minWidth: "280px",
+            backgroundColor: "#fee9ee",
+          },
+        },
+      }
+    );
   }
 
   return (

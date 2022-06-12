@@ -42,10 +42,6 @@ form {
       color: var(--color-additonal);
     }
   }
-
-  @media screen and (max-width: 1200px) {
-    flex-direction: column;
-  }
 }
 
 button.submitBtn {
