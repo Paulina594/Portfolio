@@ -28,10 +28,18 @@ export const ProjectDescriptionModal = ({
     }
   };
 
+  const escKeyCheck = (e: any) => {
+    if (e.key === "Escape") {
+      setIsModalOpen(false);
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener("keyup", escKeyCheck);
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
+      document.removeEventListener("keyup", escKeyCheck);
     };
   });
 

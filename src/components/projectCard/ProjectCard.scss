@@ -13,12 +13,13 @@
   height: 300px;
   background-color: #0a3a7e;
   border-radius: 15px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: -3px 3px 5px #0b1d4d;
   transition: 0.3s;
   cursor: pointer;
 
   &:hover {
-    transform: scale(105%);
+    transform: scale(115%);
+    box-shadow: -5px 5px 5px #0b1d4d;
   }
 
   .column-left {
@@ -27,8 +28,9 @@
     justify-content: center;
 
     img {
-      height: 100px;
+      height: 200px;
       transition: 0.9s;
+      filter: drop-shadow(-3px 2px 7px #0b1d4d);
     }
   }
 
@@ -43,14 +45,16 @@
 }
 
 .card:hover img {
-  transform: scale(150%);
+  transform: scale(110%);
+  transform-origin: bottom;
+  filter: drop-shadow(-13px 15px 5px #0b1d4d);
 }
 
-.description {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 1000px;
-}
+//.description {
+//  position: fixed;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  width: 700px;
+//  //height: 1000px;
+//}

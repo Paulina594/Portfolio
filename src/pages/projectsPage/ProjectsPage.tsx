@@ -2,6 +2,9 @@ import React from "react";
 
 import { ProjectCard } from "../../components/projectCard/ProjectCard";
 
+import portfolioCover from "../../assets/images/projects-img/portfolio/portfolio-cover.png";
+import advisorCover from "../../assets/images/projects-img/advisor/advisor-cover.png";
+
 import htmlIcon from "../../assets/images/tech-icons/html5.svg";
 import cssIcon from "../../assets/images/tech-icons/css3.svg";
 import sassIcon from "../../assets/images/tech-icons/sass.svg";
@@ -15,35 +18,35 @@ const projects = [
   {
     id: 1,
     name: "Portfolio",
-    image: htmlIcon,
+    image: portfolioCover,
     description: {
       text: "",
       technologies: [
         {
           id: 1,
-          ico: "",
-          tech: "",
+          ico: reactIcon,
+          tech: "React",
         },
         {
           id: 2,
-          ico: "",
-          tech: "",
+          ico: sassIcon,
+          tech: "Sass",
         },
         {
           id: 3,
-          ico: "",
-          tech: "",
+          ico: htmlIcon,
+          tech: "HTML",
         },
       ],
-      preview: "",
-      github: "",
+      preview: "https://www.paulina.drozdz.me",
+      github: "https://www.github.com/Paulina594/Portfolio",
       screenshots: ["", "", ""],
     },
   },
   {
     id: 2,
     name: "Magic ball - Your personal advisor",
-    image: cssIcon,
+    image: advisorCover,
     description: {
       text: "",
       technologies: [
@@ -192,13 +195,13 @@ export const ProjectsPage = () => {
     />
   ));
   return (
-    <div className="all" style={{}}>
+    <>
       <div className="title-wrapper">
         <h1 className="gradient-text slide-in-left">Projects</h1>
       </div>
       <div className="container">
         <div className="row projects">{projectsList}</div>
       </div>
-    </div>
+    </>
   );
 };
