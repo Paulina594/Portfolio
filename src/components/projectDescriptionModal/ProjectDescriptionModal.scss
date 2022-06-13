@@ -79,6 +79,7 @@ h2 {
       filter: drop-shadow(-13px 15px 5px #0b1d4d);
     }
   }
+
   p {
     padding-right: 2.5rem;
   }
@@ -89,15 +90,19 @@ h2 {
   display: inline-flex;
   flex-direction: column;
   text-align: center;
-  width: 100px;
   padding-right: 20px;
 
-  .modal-tech-icon {
-    max-width: 100px;
-    padding-bottom: 15px;
-    transition: 0.5s;
-    @media screen and (max-width: 567px) {
-      max-width: 70px;
+  .tech-wrapper {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+
+    .modal-tech-icon {
+      height: 120px;
+      padding-bottom: 15px;
+      transition: 0.5s;
     }
   }
 }

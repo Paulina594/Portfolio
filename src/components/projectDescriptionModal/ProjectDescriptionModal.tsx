@@ -9,12 +9,14 @@ export const ProjectDescriptionModal = ({
 }: any) => {
   const techList = project.description.technologies.map((tech: any) => (
     <div className="modal-tech" key={tech.id}>
-      <img
-        className="modal-tech-icon"
-        src={tech.ico}
-        alt={`${tech.tech} icon`}
-      />
-      <div>{tech.tech}</div>
+      <div className="tech-wrapper">
+        <img
+          className="modal-tech-icon"
+          src={tech.ico}
+          alt={`${tech.tech} icon`}
+        />
+        <div>{tech.tech}</div>
+      </div>
     </div>
   ));
 
@@ -95,6 +97,11 @@ export const ProjectDescriptionModal = ({
             </div>
             <div className="modal-row screenshots">
               <h3>Screenshots:</h3>
+              {project.description.screenshots.map(
+                (photo: any, index: number) => (
+                  <img key={index} src={photo} />
+                )
+              )}
             </div>
             <div className="modal-row other-tools">
               <h3>Other tools used:</h3>
