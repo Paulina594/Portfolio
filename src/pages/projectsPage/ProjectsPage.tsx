@@ -111,7 +111,7 @@ const projects = [
     name: "Stoper",
     image: stoperCover,
     description: {
-      text: "iuuuuuu",
+      text: "",
       technologies: [
         {
           id: 1,
