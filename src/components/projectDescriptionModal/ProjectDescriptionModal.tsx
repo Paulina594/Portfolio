@@ -62,7 +62,11 @@ export const ProjectDescriptionModal = ({
                 <img src={project.image} alt={project.name} />
               </div>
               <div className="project-description">
-                <p>{project.description.text}</p>
+                <div>
+                  {project.description.text.map((p: string) => (
+                    <p>{p}</p>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="modal-row project-technologies">

@@ -31,7 +31,13 @@ const projects = [
     name: "Portfolio",
     image: portfolioCover,
     description: {
-      text: "",
+      text: [
+        "Project created to introduce myself as a front-end developer.",
+        "Website contains information about me, technologies, I'm familiar with, projects and contact page with form. I'm still working to enhance my projects range.",
+        "I tried to compromise here majority of my programming skills. Design is fully responsive and mobile friendly.",
+        "This project is based on react, sass and typescript, but to accomplish it I also used node.js, rxjs and API.",
+        "All changes was regularly committed on github.",
+      ],
       technologies: [
         {
           id: 1,
@@ -77,7 +83,11 @@ const projects = [
     name: "Magic ball - Your personal advisor",
     image: advisorCover,
     description: {
-      text: "",
+      text: [
+        "A single page web app, created to help with making decisions. Based on react, sass and typescript.",
+        "Compromise simple, fully responsive design with interesting css animations.",
+        "The main task of this project is to draw an answer from the list of possible scenarios added by user and display it on the magic ball.",
+      ],
       technologies: [
         {
           id: 1,
@@ -113,7 +123,15 @@ const projects = [
     name: "Stoper",
     image: stoperCover,
     description: {
-      text: "",
+      text: [
+        "Project created for training purposes. Uses the concept of classes and states in Javascript.",
+        "Stoper contains functionalities such as:",
+        "- start/stop",
+        "- restart, which stopping time and saving record in the history",
+        "- reset to clear, all saved data from current session",
+        "- archives, with a list of the records",
+        "In the top right corner are placed buttons to change theme color and app instruction.",
+      ],
       technologies: [
         {
           id: 1,
