@@ -20,7 +20,7 @@ export const ContactForm = () => {
     ContactFormStatus.INITIAL
   );
 
-  const endpoint = "http://localhost:8080/send-mail";
+  const endpoint = `${process.env.REACT_APP_API_URL}/send-mail`;
 
   function sendMail2(message: ContactMessage): Promise<any> {
     return fetch(endpoint, {
