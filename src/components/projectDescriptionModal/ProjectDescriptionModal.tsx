@@ -9,18 +9,22 @@ export const ProjectDescriptionModal = ({
 }: any) => {
   const techList = project.description.technologies.map((tech: any) => (
     <div className="modal-tech" key={tech.id}>
-      <img
-        className="modal-tech-icon"
-        src={tech.ico}
-        alt={`${tech.tech} icon`}
-      />
-      <div>{tech.tech}</div>
+      <div className="tech-wrapper">
+        <img
+          className="modal-tech-icon"
+          src={tech.ico}
+          alt={`${tech.tech} icon`}
+        />
+        <div>{tech.tech}</div>
+      </div>
     </div>
   ));
 
-  const modal: { current: any } = useRef(null);
+  const otherTools = project.description.other.map(
+    (other: string, index: number) => <li key={index}>{other}</li>
+  );
 
-  console.log(modal);
+  const modal: { current: any } = useRef(null);
 
   const handleClickOutside = (event: MouseEvent) => {
     if (modal.current && !modal.current.contains(event.target)) {
@@ -28,10 +32,18 @@ export const ProjectDescriptionModal = ({
     }
   };
 
+  const escKeyCheck = (e: any) => {
+    if (e.key === "Escape") {
+      setIsModalOpen(false);
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener("keyup", escKeyCheck);
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
+      document.removeEventListener("keyup", escKeyCheck);
     };
   });
 
@@ -87,10 +99,19 @@ export const ProjectDescriptionModal = ({
             </div>
             <div className="modal-row screenshots">
               <h3>Screenshots:</h3>
+              <div className="gallery">
+                {project.description.screenshots.map(
+                  (photo: string, index: number) => (
+                    <div key={index} className="screenshot">
+                      <img src={photo} alt={`Screenshot number ${index + 1}`} />
+                    </div>
+                  )
+                )}
+              </div>
             </div>
             <div className="modal-row other-tools">
               <h3>Other tools used:</h3>
-              <ul></ul>
+              <ul>{otherTools}</ul>
             </div>
           </div>
         </div>

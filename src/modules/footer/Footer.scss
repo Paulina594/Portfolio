@@ -21,13 +21,13 @@
 
     .social-container {
       .social {
-        font-size: 28px;
+        font-size: 26px;
         margin: 20px;
         color: var(--color-additonal);
         transition: 0.5s;
         cursor: pointer;
         @media screen and (max-width: 1400px) {
-          font-size: 24px;
+          font-size: 20px;
         }
         @media screen and (max-width: 576px) {
           margin: 10px;
@@ -41,11 +41,11 @@
 
     .copyrights {
       color: var(--color-additonal);
-      font-size: 16px;
+      font-size: 12px;
       line-height: 25px;
       @media screen and (max-width: 576px) {
         line-height: 20px;
-        font-size: 13px;
+        font-size: 10px;
       }
       span {
           display: block;

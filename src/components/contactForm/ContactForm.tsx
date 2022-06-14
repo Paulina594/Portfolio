@@ -33,7 +33,6 @@ export const ContactForm = () => {
       if (response.status !== 200) {
         console.log(response.status);
         setFormSubmitStatus(ContactFormStatus.ERROR);
-        // throw new Error(`Server returned ${response.status} response!`);
       }
       setFormSubmitStatus(ContactFormStatus.SUCCESS);
     });
