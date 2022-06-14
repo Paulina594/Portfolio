@@ -25,12 +25,12 @@ body {
   position: relative;
   margin: 0 auto;
   padding-bottom: 142px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 35px;
   color: var(--color-additonal);
   @media screen and (min-width: 1600px) {
     width: 70%;
-    padding-bottom: 300px;
+    padding-bottom: 245px;
   }
   @media screen and (max-width: 1600px) {
     max-width: 1320px;
@@ -69,13 +69,13 @@ body {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 800;
     width: max-content;
     padding: 0;
 
     @media screen and (max-width: 1200px) {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
     @media screen and (max-width: 576px) {
       font-size: 1.5rem;

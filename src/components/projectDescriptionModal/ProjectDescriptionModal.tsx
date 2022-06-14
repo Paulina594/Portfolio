@@ -20,9 +20,11 @@ export const ProjectDescriptionModal = ({
     </div>
   ));
 
-  const modal: { current: any } = useRef(null);
+  const otherTools = project.description.other.map(
+    (other: string, index: number) => <li key={index}>{other}</li>
+  );
 
-  console.log(modal);
+  const modal: { current: any } = useRef(null);
 
   const handleClickOutside = (event: MouseEvent) => {
     if (modal.current && !modal.current.contains(event.target)) {
@@ -97,15 +99,19 @@ export const ProjectDescriptionModal = ({
             </div>
             <div className="modal-row screenshots">
               <h3>Screenshots:</h3>
-              {project.description.screenshots.map(
-                (photo: any, index: number) => (
-                  <img key={index} src={photo} />
-                )
-              )}
+              <div className="gallery">
+                {project.description.screenshots.map(
+                  (photo: string, index: number) => (
+                    <div key={index} className="screenshot">
+                      <img src={photo} alt={`Screenshot number ${index + 1}`} />
+                    </div>
+                  )
+                )}
+              </div>
             </div>
             <div className="modal-row other-tools">
               <h3>Other tools used:</h3>
-              <ul></ul>
+              <ul>{otherTools}</ul>
             </div>
           </div>
         </div>

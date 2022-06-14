@@ -68,7 +68,7 @@ export const ContactFormView = (props: ContactFormViewProps) => {
           <input name="email" type="email" placeholder="E-mail" required />
         </label>
         <label>
-          <textarea name="message" placeholder="Message" rows={20} required />
+          <textarea name="message" placeholder="Message" rows={15} required />
         </label>
         <input
           id="surname"

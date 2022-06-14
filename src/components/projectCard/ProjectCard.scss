@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 300px;
+  height: 250px;
   background-color: #0a3a7e;
   border-radius: 15px;
   box-shadow: -3px 3px 5px #0b1d4d;
@@ -28,7 +28,7 @@
     justify-content: center;
 
     img {
-      height: 200px;
+      height: 150px;
       transition: 0.9s;
       filter: drop-shadow(-3px 2px 7px #0b1d4d);
     }
@@ -38,7 +38,7 @@
     display: flex;
     flex: 1 1 50%;
     justify-content: center;
-    line-height: 50px;
+    line-height: 30px;
     padding-right: 20px;
     text-align: center;
   }
@@ -49,12 +49,3 @@
   transform-origin: bottom;
   filter: drop-shadow(-13px 15px 5px #0b1d4d);
 }
-
-//.description {
-//  position: fixed;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
-//  width: 700px;
-//  //height: 1000px;
-//}
