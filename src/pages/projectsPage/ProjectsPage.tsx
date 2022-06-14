@@ -5,6 +5,7 @@ import { ProjectCard } from "../../components/projectCard/ProjectCard";
 import portfolioCover from "../../assets/images/projects-img/portfolio/portfolio-cover.png";
 import portfolioScreenshot1 from "../../assets/images/projects-img/portfolio/portfolio-screenshot1.png";
 import portfolioScreenshot2 from "../../assets/images/projects-img/portfolio/portfolio-screenshot2.png";
+import portfolioScreenshot2a from "../../assets/images/projects-img/portfolio/portfolio-screenshot2a.png";
 import portfolioScreenshot3 from "../../assets/images/projects-img/portfolio/portfolio-screenshot3.png";
 import portfolioScreenshot4 from "../../assets/images/projects-img/portfolio/portfolio-screenshot4.png";
 import portfolioScreenshot5 from "../../assets/images/projects-img/portfolio/portfolio-screenshot5.png";
@@ -52,7 +53,8 @@ const projects = [
       github: "https://www.github.com/Paulina594/Portfolio",
       screenshots: [
         portfolioScreenshot1,
-        // portfolioScreenshot2,
+        portfolioScreenshot2,
+        portfolioScreenshot2a,
         portfolioScreenshot3,
         portfolioScreenshot4,
         portfolioScreenshot5,
