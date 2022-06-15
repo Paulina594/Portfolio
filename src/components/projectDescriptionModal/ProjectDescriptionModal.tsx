@@ -64,9 +64,11 @@ export const ProjectDescriptionModal = ({
                 </div>
                 <div className="project-description">
                   <div>
-                    {project.description.text.map((p: string) => (
-                      <p>{p}</p>
-                    ))}
+                    {project.description.text.map(
+                      (p: string, index: number) => (
+                        <p key={index}>{p}</p>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
