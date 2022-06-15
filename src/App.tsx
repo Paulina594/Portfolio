@@ -19,6 +19,7 @@ function App() {
   const pageContent = (
     <>
       <Router>
+        <div className="bg" />
         <div>
           <Toaster position="bottom-left" reverseOrder={false} />
         </div>

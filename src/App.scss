@@ -1,7 +1,15 @@
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden;}
 
+
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
   /* ff 3.6+ */
   background: -moz-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
@@ -18,6 +26,9 @@ body {
   /* global 92%+ browsers support */
   background: radial-gradient(circle at 31% 0%, rgb(11, 62, 132) 0%, rgba(1, 13, 55, 1) 100%);
 
+  background-size: cover;
+  background-position: center;
+z-index: -100;
 }
 
 .container {
