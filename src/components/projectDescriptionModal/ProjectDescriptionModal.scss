@@ -109,8 +109,8 @@ h2 {
 }
 
 .scale-in-hor-center {
-  -webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-hor-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-hor-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes scale-in-hor-center {
@@ -139,8 +139,8 @@ h2 {
 }
 
 .fade-in-modal-content {
-  -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
-  animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+  -webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+  animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
 }
 
 @-webkit-keyframes fade-in {
