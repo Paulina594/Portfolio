@@ -55,7 +55,7 @@ const projects = [
           tech: "Typescript",
         },
       ],
-      preview: "https://www.paulina.drozdz.me",
+      preview: "https://www.paulinadrozdz.me",
       github: "https://www.github.com/Paulina594/Portfolio",
       screenshots: [
         portfolioScreenshot1,
@@ -105,7 +105,7 @@ const projects = [
           tech: "Typescript",
         },
       ],
-      preview: "https://www.advisor.paulina.drozdz.me/",
+      preview: "https://www.advisor.paulinadrozdz.me/",
       github: "https://github.com/Paulina594/Advisor",
       screenshots: [advisorScreenshot],
       other: [
@@ -149,7 +149,7 @@ const projects = [
           tech: "Javascript",
         },
       ],
-      preview: "https://www.stoper.paulina.drozdz.me/",
+      preview: "https://www.stoper.paulinadrozdz.me/",
       github: "https://github.com/Paulina594/stoper",
       screenshots: [stoperScreenshot],
       other: ["FontAmesome", "Pixabay", "Seeklogo"],

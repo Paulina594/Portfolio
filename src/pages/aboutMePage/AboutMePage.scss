@@ -42,11 +42,6 @@ p {
     max-height: 600px;
     max-width: 100%;
 
-    //position: relative;
-    ////bottom: 70px;
-    @media screen and (min-width: 1200px) {
-      //margin-left: 30px;
-    }
     @media screen and (max-width: 1200px) {
       position: static;
       margin: 0 auto;
