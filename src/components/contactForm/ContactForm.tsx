@@ -44,12 +44,12 @@ export const ContactForm = () => {
       {
         loading: "Sending...",
         success: (
-          <b style={{ paddingLeft: "20px", lineHeight: "30px" }}>
+          <b style={{ paddingLeft: "20px", lineHeight: "20px" }}>
             Thanks for your message! It has been sent successfully.
           </b>
         ),
         error: (
-          <b style={{ paddingLeft: "20px", lineHeight: "30px" }}>
+          <b style={{ paddingLeft: "20px", lineHeight: "20px" }}>
             Sorry, there was a problem sending your message. Please, try again
             later.
           </b>
@@ -57,20 +57,22 @@ export const ContactForm = () => {
       },
       {
         style: {
-          minWidth: "280px",
-          // backgroundColor: "#cbffc0",
+          width: "270px",
+          fontSize: "14px",
         },
         success: {
           duration: 5000,
           style: {
-            minWidth: "280px",
+            width: "270px",
+            fontSize: "14px",
             backgroundColor: "#edf9f1",
           },
         },
         error: {
           duration: 5000,
           style: {
-            minWidth: "280px",
+            width: "270px",
+            fontSize: "14px",
             backgroundColor: "#fee9ee",
           },
         },
