@@ -26,11 +26,8 @@
         color: var(--color-additonal);
         transition: 0.5s;
         cursor: pointer;
-        @media screen and (max-width: 1400px) {
-          font-size: 20px;
-        }
         @media screen and (max-width: 576px) {
-          margin: 10px;
+          margin: 15px;
         }
 
         &:hover {
