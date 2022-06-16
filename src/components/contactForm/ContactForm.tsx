@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ContactFormView } from "../contactFormView/ContactFormView";
-import { toast } from "react-hot-toast";
+import { toast, useToaster } from "react-hot-toast";
 
 export interface ContactMessage {
   fullName: string;

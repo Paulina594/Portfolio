@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
+import { toast, Toaster } from "react-hot-toast";
 
 import { Header } from "./modules/header/Header";
 import { Footer } from "./modules/footer/Footer";
@@ -21,7 +21,7 @@ function App() {
       <Router>
         <div className="bg" />
         <div>
-          <Toaster position="bottom-left" reverseOrder={false} />
+          <Toaster position="bottom-left" reverseOrder={false} gutter={90} />
         </div>
         <div className="app-wrapper">
           {<Header />}
