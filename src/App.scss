@@ -1,15 +1,15 @@
 body {
   max-width: 100vw;
-  overflow-x: hidden;}
-
+  overflow-x: hidden;
+}
 
 
 .bg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 
   /* ff 3.6+ */
   background: -moz-radial-gradient(circle at 31% 0%, rgba(11, 62, 132, 1) 0%, rgba(1, 13, 55, 1) 100%);
@@ -28,7 +28,7 @@ body {
 
   background-size: cover;
   background-position: center;
-z-index: -100;
+  z-index: -100;
 }
 
 .container {
@@ -175,6 +175,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -205,6 +206,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes slide-in-fwd-center {
   0% {
     -webkit-transform: translateZ(-1400px);
@@ -231,6 +233,7 @@ a {
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;

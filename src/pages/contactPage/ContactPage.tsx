@@ -10,7 +10,12 @@ export const ContactPage = () => {
   const contact = (
     <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#97;&#117;&#108;&#105;&#110;&#97;&#46;&#100;&#114;&#111;&#122;&#100;&#122;&#46;&#109;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
       <i className="fa-solid fa-at" />
-      &#112;&#97;&#117;&#108;&#105;&#110;&#97;&#46;&#100;&#114;&#111;&#122;&#100;&#122;&#46;&#109;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+      <div className="email">
+        &#112;&#97;&#117;&#108;&#105;&#110;&#97;&#46;&#100;&#114;&#111;&#122;&#100;&#122;&#46;&#109;&#101;
+      </div>
+      <div className="email">
+        &#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+      </div>
     </a>
   );
 
@@ -38,7 +43,7 @@ export const ContactPage = () => {
           </div>
         </div>
       </div>
-      <div className="social-wrapper ">
+      <div className="social-wrapper">
         <div className="social-section bounce-in-top">
           <p className="social-contact">Or contact me via social media</p>
           <FontAwesomeIcon className="arrows" icon={faAnglesDown} />
