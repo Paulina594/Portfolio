@@ -221,14 +221,11 @@
       @media screen and (max-width: 1400px) {
         height: 55px;
       }
-      @media screen and (max-width: 1200px) {
-        height: 45px;
-      }
       @media screen and (max-width: 992px) {
-        height: 35px;
+        height: 50px;
       }
       @media screen and (max-width: 576px) {
-        height: 30px;
+        height: 40px;
       }
     }
   }
@@ -257,15 +254,12 @@
   @media screen and (max-width: 1400px) {
     line-height: 55px;
   }
-  @media screen and (max-width: 1200px) {
-    line-height: 45px;
-  }
   @media screen and (max-width: 992px) {
-    line-height: 35px;
+    line-height: 50px;
     letter-spacing: 5px;
   }
   @media screen and (max-width: 576px) {
-    line-height: 30px;
+    line-height: 40px;
   }
 }
 

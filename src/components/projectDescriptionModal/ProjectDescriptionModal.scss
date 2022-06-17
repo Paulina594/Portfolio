@@ -15,7 +15,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6rem 4rem;
+    padding: 4rem;
+    @media screen and (max-width: 1200px) {
+      padding: 2rem 4rem;
+    }
     @media screen and (max-width: 576px) {
       padding: 1rem 20px;
     }
@@ -37,6 +40,7 @@
       @media screen and (max-width: 1400px) {
         width: 100%;
       }
+
       @media screen and (max-width: 768px) {
         padding: 1rem 15px;
       }
@@ -80,7 +84,6 @@ h2 {
 
   @media screen and (max-width: 992px) {
     padding: 2rem 1rem;
-
   }
 
   &:last-child {
@@ -101,15 +104,11 @@ h2 {
   display: flex;
   column-gap: 40px;
   padding-bottom: 5rem;
-  @media screen and (max-width: 1400px) {
-
-  }
   @media screen and (max-width: 992px) {
     padding-top: 0;
     flex-direction: column;
     padding-bottom: 2rem;
   }
-
 
   .image {
     text-align: center;
@@ -118,11 +117,6 @@ h2 {
       margin: 0 auto;
       padding: 20px 0;
     }
-    @media screen and (max-width: 768px) {
-      //margin: auto 0;
-
-    }
-
 
     img {
       max-height: 250px;
@@ -133,7 +127,6 @@ h2 {
     }
   }
 }
-
 
 .modal-tech {
   display: flex;
@@ -236,7 +229,6 @@ h2 {
   cursor: pointer;
   @media screen and (max-width: 576px) {
     padding: 5px 10px;
-    //margin-right: 20px auto;
   }
 
   &:hover {
