@@ -8,15 +8,13 @@ export const ProjectDescriptionModal = ({
   project,
 }: any) => {
   const techList = project.description.technologies.map((tech: any) => (
-    <div className="modal-tech" key={tech.id}>
-      <div className="tech-wrapper">
-        <img
-          className="modal-tech-icon"
-          src={tech.ico}
-          alt={`${tech.tech} icon`}
-        />
-        <div>{tech.tech}</div>
-      </div>
+    <div className="tech-wrapper" key={tech.id}>
+      <img
+        className="modal-tech-icon"
+        src={tech.ico}
+        alt={`${tech.tech} icon`}
+      />
+      <div>{tech.tech}</div>
     </div>
   ));
 
@@ -74,7 +72,7 @@ export const ProjectDescriptionModal = ({
               </div>
               <div className="modal-row project-technologies">
                 <h3>Project based on:</h3>
-                {techList}
+                <div className="modal-tech">{techList}</div>
               </div>
               <div className="modal-row preview">
                 <h3>Take a look at the project:</h3>

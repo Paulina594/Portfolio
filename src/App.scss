@@ -52,7 +52,11 @@ body {
   }
   @media screen and (max-width: 576px) {
     font-size: 14px;
+    line-height: 20px;
     padding: 0 15px 5rem 15px;
+  }
+  p {
+    padding-bottom: 10px;
   }
 }
 
