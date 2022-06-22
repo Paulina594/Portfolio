@@ -26,10 +26,9 @@ export const ContactForm = () => {
     return fetch(endpoint, {
       method: "POST",
       body: JSON.stringify(message),
+      mode: 'cors',
       headers: {
-        "Content-Type": "application/json",
-        "Sec-Fetch-Site": "none",
-        "Sec-Fetch-Mode": "no-cors"
+        "Content-Type": "application/json"
       },
     }).then((response) => {
       if (response.status !== 200) {
