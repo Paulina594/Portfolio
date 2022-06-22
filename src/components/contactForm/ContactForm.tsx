@@ -29,7 +29,7 @@ export const ContactForm = () => {
       headers: {
         "Content-Type": "application/json",
         "Sec-Fetch-Site": "none",
-        "Sec-Fetch-Site": "no-cors",
+        "Sec-Fetch-Mode": "no-cors"
       },
     }).then((response) => {
       if (response.status !== 200) {
