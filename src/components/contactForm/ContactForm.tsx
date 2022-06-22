@@ -28,6 +28,7 @@ export const ContactForm = () => {
       body: JSON.stringify(message),
       headers: {
         "Content-Type": "application/json",
+        "Sec-Fetch-Site": "same-site"
       },
     }).then((response) => {
       if (response.status !== 200) {
