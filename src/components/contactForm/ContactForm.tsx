@@ -28,7 +28,8 @@ export const ContactForm = () => {
       body: JSON.stringify(message),
       headers: {
         "Content-Type": "application/json",
-        "Sec-Fetch-Site": "same-site"
+        "Sec-Fetch-Site": "none",
+        "Sec-Fetch-Site": "no-cors",
       },
     }).then((response) => {
       if (response.status !== 200) {
