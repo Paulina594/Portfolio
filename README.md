@@ -17,7 +17,6 @@
 
 - 📄 Know about my experiences [www.linkedin.com/in/paulina-drozdz-reliable-front-end-developer](www.linkedin.com/in/paulina-drozdz-reliable-front-end-developer)
 
-- ⚡ Fun fact **I'm workaholic 🙈**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
