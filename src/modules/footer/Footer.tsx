@@ -37,7 +37,7 @@ export const Footer = () => {
           </a>
         </div>
         <p className="copyrights">
-          © Designed and build with love <span>by Paulina Drożdż</span>
+          © Designed and build <span>by Paulina Drożdż</span>
         </p>
         <div className="line left" />
         <div className="line right" />
